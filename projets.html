@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences</title>
+    <link rel="stylesheet" href="css/projet-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Structure du smartphone -->
+    <div class="smartphone">
+
+        <!-- Top avec l'heure et les icônes en haut du smartphone -->
+        <div class="topy spaceBetween flex">
+            <p>14:30</p>
+            <!-- Div qui représente la barre noire entre l'heure et les icônes -->
+            <div class="separator"></div>
+            <div class="iTel">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-three-quarters"></i>
+            </div>
+        </div>
+
+        <!-- PAGES PROJETS -->
+        <div class="projects-container">
+            <div class="flex">
+                <div class="casque flex">
+                    <h2>Mes Projets</h2><img src="assets/cassque.jpg" alt="casque">
+                </div>
+
+            </div>
+
+
+            <!-- Conteneur horizontal des projets -->
+            <div class="projects-horizontal">
+
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <img src="assets/digital-art-style-bee.jpg" alt="Projet la ruche" class="project-img">
+                    <div class="project-info">
+                        <h3>La ruche</h3>
+                        <p class="project-description">Le site web La Ruche est une plateforme en ligne dédiée à la
+                            vente de produits apicoles traditionnels.</p>
+                        <a href="details-projet.html#projet1" class="btn">En savoir plus</a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <img src="assets/chateau.jpg" alt="Projet 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Château de la Loire</h3>
+                        <p class="project-description">Le site du Château de Saint-Victor-sur-Loire présente un design
+                            moderne et épuré combinant design intuitif et navigation fluide</p>
+                        <a href="details-projet.html#projet2" class="btn">En savoir plus</a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <img src="assets/plat.jpg" alt="Projet 3" class="project-img">
+                    <div class="project-info">
+                        <h3>Restaurant Brésilien</h3>
+                        <p class="project-description">Le projet Tudodebom est un site web dynamique pour un restaurant
+                            brésilien qui permet de présenter les plats, les services, et des témoignages de clients.
+                        </p>
+                        <a href="details-projet.html#projet3" class="btn">En savoir plus</a>
+                    </div>
+                </div>
+
+                <!-- Plus de projets ici... -->
+
+
+                <!-- Menu en bas du smartphone -->
+                <!--Aria label pour améliorer l'accessibilité de mon portfolio pour les utilisateurs de lecteurs d'écran en décrivant les fonctions -->
+                <div class="menu">
+                    <a href="contact.html" class="menu-button" aria-label="Me contacter">
+                        <i class="fa-solid fa-message"></i>
+                    </a>
+                    <a href="index.html" class="menu-button" aria-label="Retour à l'accueil">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="profil.html" class="menu-button" aria-label="Mon profil">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competences - Mon Portfolio Smartphone JEAN Nathalie</title>
+    <link rel="stylesheet" href="css/competences-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Le contenu du smartphone -->
+    <div class="smartphone">
+
+        <!-- Top avec l'heure et les icônes en haut du smartphone -->
+        <div class="topy spaceBetween flex">
+            <p>14:30</p>
+            <!-- Div qui représente la barre noire entre l'heure et les icônes -->
+            <div class="separator"></div>
+            <div class="iTel">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-three-quarters"></i>
+            </div>
+        </div>
+
+
+        <!-- CONTENU DE LA PAGE COMPETENCES -->
+        <div class="screen-competences flex">
+
+            <div class="Competences">
+                <h2>Mes Compétences</h2>
+
+                <!-- Cube container -->
+                <div id="cube-container" class="hidden">
+                    <div id="cube" class="cube">
+                        <div class="face front">
+                            <img src="assets/html.png" alt="HTML">
+                        </div>
+                        <div class="face back">
+                            <img src="assets/css.png" alt="CSS">
+                        </div>
+                        <div class="face left">
+                            <img src="assets/js.png" alt="JavaScript">
+                        </div>
+                        <div class="face right">
+                            <img src="assets/php.png" alt="Php">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SECTION LOGICIELS ET AUTRE -->
+
+            <div class="divers container flex">
+                <div class="logiciels flex">
+
+                    <div class="separation">
+                        <h3>Logiciels collaboratifs</h3>
+                        <p>Notion / Trello / Mural </p>
+                    </div>
+
+                    <div class="separation">
+                        <h3>Outils</h3>
+                        <p>Figma / Wireframe </p>
+                    </div>
+
+                    <div class="separation">
+                        <h3>Autres</h3>
+                        <p>Git/ VS code / Wordpress / Maamp </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Menu en bas du smartphone -->
+            <div class="menu">
+                <!-- Bouton Retour (flèche de retour) -->
+                <a href="index.html" class="menu-button" aria-label="Retour à l'accueil">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+
+                <!-- Bouton Accueil -->
+                <a href="index.html" class="menu-button" aria-label="Retour à l'accueil">
+                    <i class="fas fa-home"></i>
+                </a>
+
+                <!-- Bouton Profil -->
+                <a href="profil.html" class="menu-button" aria-label="Mon profil">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

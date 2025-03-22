@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/***************************************PROPRIETES GENERALES******************************/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #f0f0f0; */
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*Côte à côte + Si ça rendre pas tout, retour à la ligne*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.marginTop {
+    margin-top: 40px;
+}
+
+.marginBottom {
+    margin-bottom: 30px;
+}
+
+.gap {
+    gap: 55px;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.width40 {
+    width: 40%;
+}
+
+.width45 {
+    width: 45%;
+}
+
+.width55 {
+    width: 55%;
+}
+
+.container {
+    max-width: 1000px;
+    /*Ds container tjs mettre ls propriétés max width et with*/
+    width: 100%;
+    margin: auto;
+    /*c'est égal à margin-right et margin-left=auto*/
+    display: flex;
+}
+
+
+/*************************HAUT DE L ECRAN AVEC LES ICONES****************************/
+
+.topy {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background-size: cover;
+    z-index: 10;
+}
+
+.topy p {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+/* Icônes réseau, wifi et batterie */
+.iTel {
+    display: flex;
+    gap: 12px;
+    width: 35%;
+}
+
+.iTel i {
+    font-size: 22px;
+    margin: 0 5px;
+}
+
+/* La barre noire entre l'heure et les icônes */
+.separator {
+    width: 15vh;
+    height: 4vh;
+    background-color: #000;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+
+
+
+/**********************************STRUCTURE DU SMARTPHONE********************************/
+.smartphone {
+    width: 60vw;
+    /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
+    max-width: 500px;
+    /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
+    height: 90vh;
+    /* Utilisation de la hauteur de la fenêtre du navigateur */
+    border: 14px solid black;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    margin: 40px auto;
+}
+
+.screen-parcours {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    /* Permet un défilement vertical */
+    height: calc(100vh - 120px);
+    /* Définit la hauteur de l'écran pour qu'il occupe toute la fenêtre */
+    max-height: 100vh;
+    /* Limite la hauteur à 100% de la fenêtre */
+}
+
+/* Pour garantir que la barre de défilement est visible lorsque nécessaire */
+.screen-parcours::-webkit-scrollbar {
+    width: 8px;
+}
+
+.screen-parcours::-webkit-scrollbar-thumb {
+    background-color: #7b8b9a;
+    /* Une couleur différente pour la barre */
+    border-radius: 10px;
+}
+
+.screen-parcours::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/***************************************MENU EN BAS DU SMARTPHONE***********************/
+
+/* Menu en bas du smartphone */
+.menu {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 20;
+}
+
+/* Style pour les boutons du menu */
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Effet au survol des boutons */
+.menu-button:hover {
+    color: #ff4081;
+}
+
+/* Taille 'icône de retour (flèche) */
+.menu-button i.fas.fa-arrow-left {
+    font-size: 28px;
+}
+
+/*Icône Accueil */
+.menu-button i.fas.fa-home {
+    font-size: 28px;
+}
+
+/* Icône Profil */
+.menu-button i.fas.fa-user {
+    font-size: 28px;
+}
+
+/*********************************PAGE PARCOURS**************************************/
+.one {
+    width: 100%;
+    background-color: rgb(192, 207, 248);
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.one p {
+    width: 50%;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.screen-formations .fa-solid,
+.fas {
+    font-size: 40px;
+    color: blue;
+    margin-left: 20px;
+}
+
+.screen-formations h2 {
+    font-weight: 800;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border: 1px solid #444;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    /* Au départ, le panneau est caché */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    /* Animation pour l'ouverture */
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.accordion.active+.panel {
+    max-height: 600px;
+    /* Fixe une valeur max de 500px pour permettre l'ouverture */
+    transition: max-height 0.5s ease-in-out;
+}
+
+
+
+
+/********************************* Styles des pages**************************************/
+.page {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.page h1 {
+    font-size: 24px;
+}
+
+.page p {
+    font-size: 18px;
+}

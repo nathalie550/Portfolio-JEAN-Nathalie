@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails projets</title>
+    <link rel="stylesheet" href="css/details-projet-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body>
+    <!-- Structure du smartphone -->
+    <div class="smartphone">
+
+        <!-- Top avec l'heure et les icônes en haut du smartphone -->
+        <div class="topy spaceBetween flex">
+            <p>14:30</p>
+            <!-- Div qui représente la barre noire entre l'heure et les icônes -->
+            <div class="separator"></div>
+            <div class="iTel">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-three-quarters"></i>
+            </div>
+        </div>
+
+
+        <!-- PAGES DETAILS PROJETS -->
+        <div class="screen-details-projets flex">
+
+
+            <!-- Détails du Projet 1 -->
+            <div id="projet1" class="project-details">
+
+                <h2 class="project-title">La ruche</h2>
+
+                <!-- Image principale du projet -->
+                <img src="assets/abeilles.jpg" alt="Image du Projet la ruche" class="project-img">
+
+                <div class="project-info">
+                    <p><strong>Description :</strong> Le site propose une gamme de produits apicoles de qualité, tous
+                        produits de manière durable et respectueuse de la nature. Le site comprend également une section
+                        « Contact » pour les demandes de renseignements des clients et un pied de page avec des liens
+                        utiles. </p>
+
+                    <p><strong>Technologies utilisées :</strong> HTML5, CSS3 (flebox, typographie), icônes Font Awesome
+                    </p>
+
+                    <!-- Section des images supplémentaires (captures d'écran, démos) -->
+                    <h3>Captures d'écran :</h3>
+                    <div class="project-gallery">
+                        <img src="assets/projet1-screenshot1.jpg" alt="Capture 1" class="gallery-img">
+                        <img src="assets/projet1-screenshot2.jpg" alt="Capture 2" class="gallery-img">
+                    </div>
+
+                    <p><strong>Objectifs du projet :</strong>Combiner clarté, fonctionnalité et valeurs de l'entreprise,
+                        expérience agréable et intuitive pour les utilisateurs.</p>
+                </div>
+
+                <!-- Détails du Projet 2 -->
+                <div id="projet2" class="project-details">
+
+                    <h2 class="project-title">Château de la Loire</h2>
+
+                    <!-- Image principale du projet -->
+                    <img src="assets/couloirChateau.jpg" alt="Image d un château" class="project-img">
+
+                    <div class="project-info">
+                        <p><strong>Description :</strong> Un site historique riche en patrimoine, dont l'objectif du
+                            projet est de créer un site web institutionnel pour offrir une présentation claire et
+                            attractive du château. </p>
+
+                        <p><strong>Technologies utilisées :</strong> HTML5, CSS3 (flebox, typographie), média queries
+                        </p>
+
+                        <!-- Section des images supplémentaires (captures d'écran, démos) -->
+                        <h3>Captures d'écran :</h3>
+                        <div class="project-gallery">
+                            <img src="assets/projet1-screenshot1.jpg" alt="Capture 1" class="gallery-img">
+                            <img src="assets/projet1-screenshot2.jpg" alt="Capture 2" class="gallery-img">
+                        </div>
+
+                        <p><strong>Objectifs du projet :</strong> Présenter les services et l'histoire du château de
+                            manière attrayante et accessible.</p>
+
+
+                        <!-- Détails du Projet 3 -->
+                        <div id="projet3" class="project-details">
+
+                            <h2 class="project-title">Restaurant Brésilien</h2>
+
+                            <!-- Image principale du projet -->
+                            <img src="assets/plat2.jpg" alt="Restaurant Brésilien " class="project-img">
+
+                            <div class="project-info">
+                                <p><strong>Description :</strong> Le site est conçu pour offrir une expérience
+                                    utilisateur fluide et agréable grâce à une navigation intuitive et un design
+                                    moderne. Les informations sont affichées de manière dynamique à partir d'un fichier
+                                    JSON, permettant ainsi une gestion facile et évolutive du contenu. Le site est
+                                    également responsive et utilise des animations pour améliorer l'interaction avec
+                                    l'utilisateur.</p>
+
+                                <p><strong>Technologies utilisées :</strong> HTML5, CSS3 (flebox), icônes Font Awesome,
+                                    API Fetch, JavaScript, JSON (JavaScript Object Notation) : Format de données utilisé
+                                    pour stocker et organiser les informations du restaurant comme les plats, services,
+                                    et témoignages. Ces données sont ensuite insérées dynamiquement sur le site.</p>
+
+                                <!-- Section des images supplémentaires (captures d'écran, démos) -->
+                                <h3>Captures d'écran :</h3>
+                                <div class="project-gallery">
+                                    <img src="assets/projet1-screenshot1.jpg" alt="Capture 1" class="gallery-img">
+                                    <img src="assets/projet1-screenshot2.jpg" alt="Capture 2" class="gallery-img">
+                                </div>
+
+                                <p><strong>Objectifs du projet :</strong> Le site offre une gestion flexible et
+                                    dynamique du contenu, tout en garantissant une expérience utilisateur fluide et
+                                    interactive.</p>
+                            </div>
+
+
+                            <!-- Bouton retour aux projets -->
+                            <a href="projets.html" class="btn">Retour aux projets</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu en bas du smartphone -->
+                <!--Aria label pour améliorer l'accessibilité de mon portfolio pour les utilisateurs de lecteurs d'écran en décrivant les fonctions -->
+                <div class="menu">
+                    <!-- Bouton Retour (flèche de retour) -->
+                    <a href="index.html" class="menu-button" aria-label="Retour à l'accueil">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+
+                    <!-- Bouton Accueil -->
+                    <a href="index.html" class="menu-button" aria-label="Retour à l'accueil">
+                        <i class="fas fa-home"></i>
+                    </a>
+
+                    <!-- Bouton Profil -->
+                    <a href="profil.html" class="menu-button" aria-label="Mon profil">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

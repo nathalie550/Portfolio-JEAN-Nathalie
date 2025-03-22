@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/***************************************PROPRIETES GENERALES******************************/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #f0f0f0; */
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*Côte à côte + Si ça rendre pas tout, retour à la ligne*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.marginTop {
+    margin-top: 40px;
+}
+
+.marginBottom {
+    margin-bottom: 30px;
+}
+
+.gap {
+    gap: 55px;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.width40 {
+    width: 40%;
+}
+
+.width45 {
+    width: 45%;
+}
+
+.width55 {
+    width: 55%;
+}
+
+.container {
+    max-width: 1000px;
+    /*Ds container tjs mettre ls propriétés max width et with*/
+    width: 100%;
+    margin: auto;
+    /*c'est égal à margin-right et margin-left=auto*/
+    display: flex;
+}
+
+
+/*************************HAUT DE L ECRAN AVEC LES ICONES****************************/
+
+.topy {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background-image: url('assets/drops-4968242_1280.jpg');
+    background-size: cover;
+    z-index: 10;
+}
+
+.topy p {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+/* Icônes réseau, wifi et batterie */
+.iTel {
+    display: flex;
+    gap: 12px;
+    width: 35%;
+}
+
+.iTel i {
+    font-size: 22px;
+    margin: 0 5px;
+}
+
+/* La barre noire entre l'heure et les icônes */
+.separator {
+    width: 15vh;
+    height: 4vh;
+    background-color: #000;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+
+
+
+/**********************************STRUCTURE DU SMARTPHONE********************************/
+.smartphone {
+    width: 50vw;
+    /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
+    max-width: 500px;
+    /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
+    height: 90vh;
+    /* Utilisation de la hauteur de la fenêtre du navigateur */
+    border: 14px solid black;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    margin: 40px auto;
+}
+
+.screen-projets {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-image: url('assets/drops-4968242_1280');
+    background-size: cover;
+    /* Assure que l'image couvre tout l'espace de la smartphone */
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    /* Permet le défilement si nécessaire */
+}
+
+/* Personnalisation de la barre de défilement */
+.screen-projets::-webkit-scrollbar {
+    width: 8px;
+}
+
+.screen-projets::-webkit-scrollbar-thumb {
+    background-color: #ff4081;
+    border-radius: 10px;
+}
+
+.screen-projets::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    /* Couleur de fond de la barre de défilement */
+    border-radius: 10px;
+}
+
+
+
+/***************************************MENU EN BAS DU SMARTPHONE***********************/
+
+/* Menu en bas du smartphone */
+.menu {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 20;
+}
+
+/* Style pour les boutons du menu */
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Effet au survol des boutons */
+.menu-button:hover {
+    color: #ff4081;
+}
+
+/* Taille 'icône de retour (flèche) */
+.menu-button i.fas.fa-arrow-left {
+    font-size: 28px;
+}
+
+/*Icône Accueil */
+.menu-button i.fas.fa-home {
+    font-size: 28px;
+}
+
+/* Icône Profil */
+.menu-button i.fas.fa-user {
+    font-size: 28px;
+}
+
+
+/****************************PAGE MES PROJETS******************************/
+.casque {
+    width: 100%;
+    /* border: 1px solid reD; */
+    /* gap: 80px; */
+}
+
+.casque img {
+    width: 20%;
+}
+
+.casque h2 {
+    margin-left: 30px;
+}
+
+/* Container principal de la page projets */
+.projects-container {
+    /* text-align: center; */
+    padding: 20px;
+}
+
+/* Titre de la page */
+.projects-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+/* Conteneur horizontal de projets */
+.projects-horizontal {
+    display: flex;
+    overflow-x: auto;
+    /* Permet le défilement horizontal */
+    gap: 30px;
+    padding: 20px;
+    justify-content: start;
+    /* Aligne les projets au début du conteneur */
+    width: 100%;
+    /* background-color: #f9f9ce; */
+    margin-bottom: 150px;
+    max-width: 100%;
+    box-sizing: border-box;
+    /* Garantit que le padding n'affecte pas la largeur totale */
+}
+
+/* Personnalisation de la barre de défilement horizontale */
+.projects-horizontal::-webkit-scrollbar {
+    height: 12px;
+    /* Épaisseur de la barre de défilement horizontale */
+}
+
+.projects-horizontal::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Couleur de la piste (arrière-plan de la barre de défilement) */
+}
+
+.projects-horizontal::-webkit-scrollbar-thumb {
+    background-color: #da44df;
+    /* Couleur du curseur (partie que l'on déplace) */
+    border-radius: 10px;
+    /* Bord arrondi */
+}
+
+.projects-horizontal::-webkit-scrollbar-thumb:hover {
+    background-color: #d42c99;
+    /* Couleur de la barre de défilement au survol */
+}
+
+/* Style pour chaque carte de projet */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px 8px rgb(138, 140, 138);
+    overflow: hidden;
+    width: 300px;
+    border: 4px solid rgb(138, 140, 138);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex-shrink: 0;
+    /* Empêche les cartes de se rétrécir */
+    margin: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    /* Décale la carte vers le haut */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Ombre plus marquée */
+}
+
+/* Image de chaque projet */
+.project-img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 2px solid #ddd;
+    /* Ajoute une petite ligne de séparation sous l'image */
+    object-fit: cover;
+}
+
+/* Informations du projet (titre, description, bouton) */
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Bouton "En savoir plus" */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
