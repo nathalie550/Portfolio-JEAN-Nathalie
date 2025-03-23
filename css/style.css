@@ -315,10 +315,6 @@ li {
         max-width: 400px;
         height: 95vh;
         border: 5px solid black;
-        margin: 0;
-        /* Supprimer toute marge extérieure */
-        padding: 0;
-        /* Supprimer tout padding à l'intérieur */
     }
 
     /* Ajuster la taille de l'écran */
@@ -333,24 +329,22 @@ li {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        justify-content: flex-start;
-        /* Alignement à gauche */
+        justify-content: space-between;
         width: 100%;
     }
 
     /* Application ajustée pour les petits écrans */
     .apps .app {
-        width: 45%;
+        width: 46%;
         /* Applications de taille 45% pour 2 par ligne */
-        max-width: 120px;
-        margin: 0;
-        /* Supprimer toute marge */
+        max-width: 150px;
+        /* margin: 0;*/
     }
 
 
     .apps img {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
     }
 
     .shutdown-container {
@@ -366,7 +360,7 @@ li {
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 14px;
+        font-size: 13px;
     }
 
 }
@@ -390,20 +384,18 @@ li {
     }
 
     /* Adapter la taille des applications */
-    .apps .app {
-        width: 45%;
-        /* Applications de taille 45% pour 2 par ligne */
-        max-width: 120px;
-        margin: 0;
-        /* Supprimer toute marge */
+    .apps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
     }
-
 
     /* Adapter la taille des applications */
     .apps .app {
         width: 45%;
         /* Applications de taille 45% pour 2 par ligne */
-        max-width: 100px;
+        max-width: 120px;
         /* Limiter la taille des applications */
         margin: 0;
         padding: 0;
@@ -411,8 +403,8 @@ li {
     }
 
     .apps img {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
     }
 
     .shutdown-container {
@@ -428,6 +420,6 @@ li {
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
