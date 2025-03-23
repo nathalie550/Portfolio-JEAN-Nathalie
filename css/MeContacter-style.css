@@ -127,9 +127,9 @@ li {
 .smartphone {
     width: 60vw;
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 500px;
+    max-width: 440px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
-    height: 90vh;
+    height: 100vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
     border: 14px solid black;
     border-radius: 60px;
@@ -228,14 +228,14 @@ li {
 
 
 h1 {
-    font-size: 3em;
+    font-size: 2.4em;
     font-weight: 700;
     width: 100%;
     text-align: center;
 }
 
 .bot h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -266,7 +266,7 @@ h1 {
 .user-message {
     background-color: #d1f7d1;
     align-self: flex-end;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .bot-message {
@@ -279,7 +279,7 @@ h1 {
     padding: 15px;
     /* border: 1px solid #ccc; */
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #sendBtn {
@@ -287,7 +287,7 @@ h1 {
     border: 2px solid rgb(121, 209, 252);
     border-radius: 15px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     background-color: rgb(121, 209, 252);
     font-weight: 600;
     margin-top: 30px;
@@ -323,6 +323,6 @@ h1 {
     margin: 5px 0;
     border-radius: 15px;
     max-width: 85%;
-    font-size: 19px;
+    font-size: 16px;
     /* margin-bottom: 50px; */
 }
