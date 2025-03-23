@@ -127,9 +127,9 @@ li {
 .smartphone {
     width: 60vw;
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 500px;
+    max-width: 440px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
-    height: 90vh;
+    height: 100vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
     border: 14px solid black;
     border-radius: 60px;
@@ -140,35 +140,40 @@ li {
     margin: 40px auto;
 }
 
-.screen-parcours {
+.screen-formations {
+    padding-top: 10px;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    /* Aligner le contenu en haut si tu veux éviter qu'il soit centré */
     padding-top: 10px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow-y: auto;
-    /* Permet un défilement vertical */
+    /* Permet le défilement vertical */
     height: calc(100vh - 120px);
     /* Définit la hauteur de l'écran pour qu'il occupe toute la fenêtre */
     max-height: 100vh;
     /* Limite la hauteur à 100% de la fenêtre */
+    margin-bottom: 60px;
 }
 
-/* Pour garantir que la barre de défilement est visible lorsque nécessaire */
-.screen-parcours::-webkit-scrollbar {
+
+/* Personnalisation de la barre de défilement */
+.screen-formations::-webkit-scrollbar {
     width: 8px;
+    /* Largeur de la barre de défilement */
 }
 
-.screen-parcours::-webkit-scrollbar-thumb {
+.screen-formations::-webkit-scrollbar-thumb {
     background-color: #7b8b9a;
-    /* Une couleur différente pour la barre */
     border-radius: 10px;
+    /* Coins arrondis */
 }
 
-.screen-parcours::-webkit-scrollbar-track {
+.screen-formations::-webkit-scrollbar-track {
     background-color: #f0f0f0;
     border-radius: 10px;
 }
@@ -224,19 +229,19 @@ li {
     width: 100%;
     background-color: rgb(192, 207, 248);
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .one p {
     width: 50%;
     margin-left: 30px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .screen-formations .fa-solid,
 .fas {
-    font-size: 40px;
+    font-size: 35px;
     color: blue;
     margin-left: 20px;
 }
@@ -244,7 +249,7 @@ li {
 .screen-formations h2 {
     font-weight: 800;
     width: 100%;
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -253,12 +258,12 @@ li {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 14px;
     transition: 0.4s;
     border: 1px solid #444;
 }
@@ -281,7 +286,7 @@ li {
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 0 17px;
     background-color: white;
     max-height: 0;
     /* Au départ, le panneau est caché */
@@ -289,7 +294,7 @@ li {
     transition: max-height 0.3s ease-out;
     /* Animation pour l'ouverture */
     margin: 0;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     padding-bottom: 10px;
 }
 
