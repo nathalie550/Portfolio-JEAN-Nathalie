@@ -310,34 +310,47 @@ li {
 /*******************************MEDIA QUERIES*******************************/
 @media all and (max-width: 800px) {
     .smartphone {
-        /* La largeur du smartphone est augmentée pour les petits écrans */
         width: 80vw;
-        /* Utiliser une largeur plus grande (80% de la fenêtre) */
-        height: 100vh;
+        /* Augmente la largeur à 80% de la fenêtre */
+        max-width: 380px;
+        /* Limiter la largeur max du smartphone */
+        height: 90vh;
+        /* Ajuster la hauteur pour plus d'espace vertical */
+        border: 8px solid black;
+        /* Réduire la largeur du bord */
+    }
+
+    .screen {
+        height: calc(100vh - 140px);
+        /* Ajuste la hauteur de l'écran pour plus de contenu */
     }
 
     .apps .app {
-        width: 45%;
-        /* Afficher 2 applications par ligne */
+        width: 60%;
+        /* Afficher 2 applications côte à côte, un peu plus grandes */
     }
 }
 
 @media all and (max-width: 500px) {
     .smartphone {
-        /* Sur les très petits écrans, on peut augmenter la largeur à 90% pour que ça prenne plus de place */
         width: 90vw;
-        /* Largeur à 90% de la fenêtre */
-        height: 100vh;
+        /* Largeur du smartphone à 90% de la fenêtre */
+        max-width: 360px;
+        /* Limiter la largeur max du smartphone */
+        height: 85vh;
+        /* Ajuster la hauteur pour mieux occuper l'espace */
+        border: 6px solid black;
+        /* Bord encore plus fin */
+    }
+
+    .screen {
+        height: calc(100vh - 120px);
+        /* Ajuste la hauteur de l'écran */
     }
 
     .apps .app {
-        width: 45%;
-        /* Afficher 2 applications par ligne */
-    }
-
-    .apps img {
-        width: 100%;
-        /* Redimensionner les images pour qu'elles soient plus grandes et s'adaptent à la largeur */
-        height: auto;
+        width: 55%;
+        /* Afficher 2 applications côte à côte avec une largeur plus grande */
+        margin-bottom: 15px;
     }
 }
