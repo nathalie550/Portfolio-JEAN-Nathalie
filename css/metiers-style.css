@@ -127,9 +127,9 @@ li {
 .smartphone {
     width: 60vw;
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 500px;
+    max-width: 440px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
-    height: 90vh;
+    height: 100vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
     border: 14px solid black;
     border-radius: 60px;
@@ -222,12 +222,12 @@ li {
 
 /*********************************PAGE PARCOURS**************************************/
 .screen-metiers h2 {
-    font-size: 1.8em;
+    font-size: 1.7em;
 }
 
 .one p {
-    font-size: 1.5em;
-    margin-left: 25px;
+    font-size: 1.4em;
+    margin-left: 15px;
     font-weight: 600;
 }
 
@@ -235,15 +235,15 @@ li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* 2 cartes par ligne */
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+    padding: 10px;
     margin-bottom: 70px;
 }
 
 .metier-card {
     background-color: #f9f9f9;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -261,14 +261,14 @@ li {
 }
 
 .metier-icon {
-    font-size: 40px;
+    font-size: 35px;
     color: #3498db;
     margin-bottom: 10px;
 }
 
 .metier-card p {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
 }
 
@@ -280,9 +280,9 @@ li {
 
 .metier-details h2 {
     color: blue;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .metier-details p {
-    font-size: 1.1em;
+    font-size: 0.9em;
 }
