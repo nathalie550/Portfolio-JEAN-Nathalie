@@ -148,7 +148,7 @@ li {
 .smartphone {
     width: 60vw;
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 500px;
+    max-width: 410px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
     height: 90vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
@@ -162,20 +162,25 @@ li {
 }
 
 .screen-connexion {
+    padding-top: 10px;
+    background-image: url("/assets/goutte.jpg");
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    /* Aligner le contenu en haut si tu veux éviter qu'il soit centré */
     padding-top: 10px;
-    background-image: url("/assets/goutte.jpg");
     background-size: cover;
-    /* Assure que l'image couvre tout l'espace de la smartphone */
-    /* background-position: center; */
+    background-position: center;
     background-repeat: no-repeat;
     overflow-y: auto;
-    /* Permet le défilement si nécessaire */
-    /* border: 2px solid rgb(255, 0, 225); */
+    /* Permet le défilement vertical */
+    height: calc(100vh - 120px);
+    /* Définit la hauteur de l'écran pour qu'il occupe toute la fenêtre */
+    max-height: 100vh;
+    /* Limite la hauteur à 100% de la fenêtre */
 }
+
 
 /* Personnalisation de la barre de défilement */
 .screen-connexion::-webkit-scrollbar {
@@ -255,11 +260,12 @@ li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* margin-top: 50px; */
     color: white;
+    margin-bottom: 300px;
 }
 
 .login-container h2 {
     font-size: 4em;
-    margin-bottom: 320px;
+    margin-bottom: 120px;
 }
 
 
@@ -281,7 +287,7 @@ li {
 .login-btn {
     background-color: white;
     color: black;
-    padding: 30px 60px;
+    padding: 30px 50px;
     border: none;
     border-radius: 5px;
     font-size: 28px;

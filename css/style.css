@@ -128,9 +128,9 @@ li {
 .smartphone {
     width: 60vw;
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 500px;
+    max-width: 440px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
-    height: 90vh;
+    height: 100vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
     border: 14px solid black;
     border-radius: 60px;
@@ -141,19 +141,26 @@ li {
     margin: 40px auto;
 }
 
+
 .screen {
+    padding-top: 10px;
+    background-image: url("/assets/goutte.jpg");
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    /* Aligner le contenu en haut si tu veux éviter qu'il soit centré */
     padding-top: 10px;
-    background-image: url("/assets/goutte.jpg");
     background-size: cover;
-    /* Assure que l'image couvre tout l'espace de la smartphone */
     background-position: center;
     background-repeat: no-repeat;
     overflow-y: auto;
-    /* Permet le défilement si nécessaire */
+    /* Permet le défilement vertical */
+    height: calc(100vh - 120px);
+    /* Définit la hauteur de l'écran pour qu'il occupe toute la fenêtre */
+    max-height: 100vh;
+    /* Limite la hauteur à 100% de la fenêtre */
+
 }
 
 /* Personnalisation de la barre de défilement */
@@ -176,13 +183,13 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     padding: 10px;
 }
 
 .apps img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 20%;
     border: 4px solid black;
 }
@@ -275,7 +282,7 @@ li {
     background-color: #d32f2f;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .shutdown-container:hover {
