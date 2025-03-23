@@ -326,10 +326,12 @@ li {
 
     /* Application ajustée pour les petits écrans */
     .apps .app {
-        width: 46%;
-        /* Mettre 2 applications par ligne */
+        width: 48%;
+        /* Mettre 2 applications par ligne, en augmentant légèrement la largeur */
         max-width: 150px;
         /* Limiter la taille des applications */
+        margin: 5px 0;
+        /* Ajouter un petit espace entre les lignes */
     }
 
     .apps img {
@@ -347,7 +349,7 @@ li {
         font-size: 16px;
     }
 
-    /* Taille 'icône */
+    /* Taille 'icône' */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
@@ -396,7 +398,7 @@ li {
         font-size: 16px;
     }
 
-    /* Taille 'icône */
+    /* Taille 'icône' */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
