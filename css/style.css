@@ -312,15 +312,23 @@ li {
     /* Ajuster la largeur du smartphone */
     .smartphone {
         width: 70vw;
-        /* Plus large pour occuper plus d'espace */
         max-width: 400px;
         height: 95vh;
-        border: 6px solid black;
+        border: 5px solid black;
     }
 
     /* Ajuster la taille de l'écran */
     .screen {
         height: calc(100vh - 100px);
+    }
+
+    /* Application ajustée pour les petits écrans */
+    .apps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* Espace minimal entre les applications */
+        justify-content: space-between;
     }
 
     /* Application ajustée pour les petits écrans */
@@ -343,7 +351,7 @@ li {
     }
 
     .menu-button {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* Taille 'icône */
@@ -374,10 +382,21 @@ li {
     }
 
     /* Adapter la taille des applications */
+    .apps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* Ajouter un petit espace entre les applications */
+        justify-content: space-between;
+    }
+
+    /* Adapter la taille des applications */
     .apps .app {
         width: 45%;
         /* Applications de taille 45% pour 2 par ligne */
         max-width: 120px;
+        margin: 0;
+        /* Supprimer toute marge */
     }
 
     .apps img {
