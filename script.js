@@ -101,7 +101,12 @@ userInput.addEventListener('keypress', (event) => {
 
 // Fonction pour démarrer la conversation avec un message du bot
 function startConversation() {
-    const welcomeMessage = "Bonjour ! Je suis là pour te donner mes informations de contact. Voici ce que tu peux savoir :\n- Mon email\n- Mon adresse\n- Ma date de naissance\n- Mon permis de conduire\n\nQue souhaites-tu savoir ?";
+    const welcomeMessage = "Bonjour ! Je suis là pour te donner mes informations de contact. Voici ce que tu peux savoir :\n\n" +
+        "- Mon email\n" +
+        "- Mon adresse\n" +
+        "- Ma date de naissance\n" +
+        "- Mon permis de conduire\n\n" +
+        "Que souhaites-tu savoir ?";
     addMessage(welcomeMessage, 'bot-message');
 }
 
