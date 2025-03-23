@@ -348,7 +348,7 @@ li {
     }
 
     .apps .app {
-        width: 48%;
+        width: 58%;
         /* Mettre 2 applications par ligne */
         max-width: 150px;
         /* Limiter la taille des applications */
@@ -424,7 +424,7 @@ li {
     }
 
     .apps .app {
-        width: 45%;
+        width: 55%;
         /* Applications de taille 45% pour 2 par ligne */
         max-width: 120px;
         /* Limiter la taille des applications */
