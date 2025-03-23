@@ -319,7 +319,53 @@ li {
     width: 50px;
 }
 
-/****SECTION A PROPOS DE MOI****/
+
+/*****************************************MON CV*****************************/
+.cv {
+    border: 4px solid #71afef;
+    padding: 10px;
+    margin-top: 50px;
+    width: 100%;
+    box-shadow: 10px 14px 18px 0 rgba(0, 0, 0, 0.5);
+}
+
+.cv h3 {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+.cv-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Style de l'image */
+.cv img {
+    width: 25%;
+    max-width: 100px;
+    margin-left: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* Style du lien */
+.cv-link {
+    font-size: 1em;
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.cv-link:hover {
+    text-decoration: underline;
+}
+
+
+/******************************SECTION A PROPOS DE MOI**********************/
 .Apropos {
     width: 100%;
     /* margin-top: 40px; */
