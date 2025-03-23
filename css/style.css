@@ -343,15 +343,14 @@ li {
         /* Pas de padding */
         margin: 0;
         /* Pas de marge */
-        width: 100%;
-        /* Prendre toute la largeur */
+
     }
 
     .apps .app {
         width: 48%;
-        /* Mettre 2 applications par ligne (50% - marges) */
-        max-width: 100px;
-        /* Limiter la taille des applications à 100px */
+        /* Mettre 2 applications par ligne */
+        max-width: 140px;
+        /* Limiter la taille des applications */
         margin: 0;
         /* Pas de marge */
         padding: 0;
@@ -359,15 +358,13 @@ li {
     }
 
     .apps img {
-        width: 100px;
-        /* Ajuster la taille des images */
-        height: 100px;
-        /* Garder la taille originale de l'image */
+        width: 75%;
+        /* Réduire la taille des images */
     }
 
     .shutdown-container {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
     .menu-button {
@@ -427,7 +424,7 @@ li {
     .apps .app {
         width: 48%;
         /* Applications de taille 50% pour 2 par ligne */
-        max-width: 100px;
+        max-width: 120px;
         /* Limiter la taille des applications */
         margin: 0;
         /* Pas de marge */
@@ -436,15 +433,13 @@ li {
     }
 
     .apps img {
-        width: 100px;
-        /* Ajuster la taille des images */
-        height: 100px;
-        /* Garder la taille originale de l'image */
+        width: 70%;
+        /* Réduire encore plus les images */
     }
 
     .shutdown-container {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
     .menu-button {
