@@ -348,7 +348,7 @@ li {
     }
 
     .apps .app {
-        width: 58%;
+        width: 65%;
         /* Mettre 2 applications par ligne */
         max-width: 150px;
         /* Limiter la taille des applications */
@@ -359,8 +359,8 @@ li {
     }
 
     .apps img {
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         /* Ajuster la taille des images */
     }
 
@@ -424,7 +424,7 @@ li {
     }
 
     .apps .app {
-        width: 55%;
+        width: 60%;
         /* Applications de taille 45% pour 2 par ligne */
         max-width: 120px;
         /* Limiter la taille des applications */
@@ -435,8 +435,8 @@ li {
     }
 
     .apps img {
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         /* Ajuster la taille des images */
     }
 
