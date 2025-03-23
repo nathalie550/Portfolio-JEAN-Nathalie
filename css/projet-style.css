@@ -278,7 +278,7 @@ li {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     flex-shrink: 0;
     margin: 20px;
-    height: 30px;
+    height: 410px;
     /* Réduire la hauteur des cartes */
 }
 
@@ -315,12 +315,11 @@ li {
 /* Image de chaque projet */
 .project-img {
     width: 100%;
-    height: 120px;
+    height: 180px;
     /* Réduire la hauteur de l'image */
     border-bottom: 2px solid #ddd;
     object-fit: cover;
 }
-
 
 /* Informations du projet (titre, description, bouton) */
 .project-info {
