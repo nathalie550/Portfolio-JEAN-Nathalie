@@ -315,11 +315,19 @@ li {
         max-width: 400px;
         height: 95vh;
         border: 5px solid black;
+        margin: 0;
+        /* Supprimer toute marge extérieure */
+        padding: 0;
+        /* Supprimer tout padding à l'intérieur */
     }
 
     /* Ajuster la taille de l'écran */
     .screen {
         height: calc(100vh - 100px);
+        margin: 0;
+        /* Supprimer toute marge extérieure */
+        padding: 0;
+        /* Supprimer tout padding à l'intérieur */
     }
 
     /* Application ajustée pour les petits écrans */
@@ -327,15 +335,17 @@ li {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        /* Espace minimal entre les applications */
-        justify-content: space-between;
+        justify-content: flex-start;
+        /* Alignement à gauche */
+        width: 100%;
+        /* Prendre toute la largeur */
     }
 
     /* Application ajustée pour les petits écrans */
     .apps .app {
-        width: 46%;
+        width: 48%;
         /* Mettre 2 applications par ligne */
-        max-width: 150px;
+        max-width: 100px;
         /* Limiter la taille des applications */
     }
 
@@ -386,23 +396,33 @@ li {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        /* Ajouter un petit espace entre les applications */
-        justify-content: space-between;
+        /* Espacement minimal entre les applications */
+        justify-content: flex-start;
+        /* Alignement à gauche */
+        padding: 0;
+        /* Pas de padding */
+        margin: 0;
+        /* Pas de marge */
+        width: 100%;
+        /* Prendre toute la largeur */
     }
 
     /* Adapter la taille des applications */
     .apps .app {
         width: 45%;
         /* Applications de taille 45% pour 2 par ligne */
-        max-width: 120px;
+        max-width: 100px;
+        /* Limiter la taille des applications */
         margin: 0;
-        /* Supprimer toute marge */
+        padding: 0;
+        /* Pas de padding */
     }
 
     .apps img {
-        width: 60px;
-        height: 60px;
-        /* Réduire la taille des images */
+        width: 100px;
+        /* Ajuster la taille des images */
+        height: 100px;
+        /* Garder la taille originale de l'image */
     }
 
     .shutdown-container {
