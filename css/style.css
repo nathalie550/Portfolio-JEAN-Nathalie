@@ -307,77 +307,6 @@ li {
 
 /*******************************MEDIA QUERIES*******************************/
 
-/* Smartphone (tous les écrans de taille mobile) */
-.smartphone {
-    width: 60vw;
-    /* Largeur relative à la fenêtre du navigateur */
-    max-width: 380px;
-    /* Largeur maximale, pour que ça reste dans une taille mobile correcte */
-    height: 80vh;
-    /* Utilisation de 80% de la hauteur de la fenêtre */
-    border: 10px solid black;
-    /* Bordure fine */
-    border-radius: 30px;
-    /* Coins arrondis */
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 40px auto;
-    margin-top: 80px;
-    overflow: hidden;
-    /* Empêcher le débordement */
-}
-
-/* Écran à l'intérieur du smartphone */
-.screen {
-    padding-top: 10px;
-    background-image: url("/assets/goutte.jpg");
-    /* L'image de fond que tu utilises */
-    background-size: cover;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: calc(100vh - 120px);
-    /* Laisser de l'espace pour la barre du bas */
-    overflow-y: auto;
-    /* Permet le défilement vertical */
-}
-
-/* Disposition des applications */
-.apps {
-    display: flex;
-    flex-wrap: wrap;
-    /* Permet à la disposition de passer à la ligne si nécessaire */
-    justify-content: center;
-    gap: 10px;
-    /* Réduire l'espacement entre les applications */
-    padding: 10px;
-}
-
-/* Application à l'intérieur du smartphone */
-.apps .app {
-    width: 45%;
-    /* 2 applications par ligne */
-    max-width: 120px;
-    /* Limiter la largeur des applications */
-    margin-bottom: 20px;
-    text-align: center;
-    /* Centrer le texte des applications */
-}
-
-/* Taille des images des applications */
-.apps img {
-    width: 80%;
-    /* Réduire la taille de l'image */
-    height: auto;
-    /* Garder les proportions de l'image */
-    border-radius: 10%;
-    border: 2px solid #333;
-}
-
-/************************************* MOBILE SPECIFIQUE ****************************/
-
 @media all and (max-width: 800px) {
 
     /* Ajuster la largeur du smartphone */
@@ -385,10 +314,8 @@ li {
         width: 70vw;
         /* Plus large pour occuper plus d'espace */
         max-width: 400px;
-        height: 75vh;
-        /* Réduire légèrement la hauteur */
+        height: 95vh;
         border: 6px solid black;
-        /* Réduire la bordure */
     }
 
     /* Ajuster la taille de l'écran */
@@ -398,16 +325,34 @@ li {
 
     /* Application ajustée pour les petits écrans */
     .apps .app {
-        width: 48%;
+        width: 46%;
         /* Mettre 2 applications par ligne */
-        max-width: 140px;
+        max-width: 150px;
         /* Limiter la taille des applications */
     }
 
     .apps img {
-        width: 70%;
+        width: 60px;
+        height: 60px;
         /* Réduire la taille des images */
     }
+
+    .shutdown-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu-button {
+        font-size: 16px;
+    }
+
+    /* Taille 'icône */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 14px;
+    }
+
 }
 
 @media all and (max-width: 500px) {
@@ -417,7 +362,7 @@ li {
         width: 80vw;
         /* Largeur encore plus grande */
         max-width: 360px;
-        height: 70vh;
+        height: 90vh;
         /* Réduire légèrement la hauteur */
         border: 4px solid black;
         /* Bordure fine */
@@ -436,7 +381,24 @@ li {
     }
 
     .apps img {
-        width: 60%;
-        /* Réduire encore plus les images */
+        width: 60px;
+        height: 60px;
+        /* Réduire la taille des images */
+    }
+
+    .shutdown-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu-button {
+        font-size: 16px;
+    }
+
+    /* Taille 'icône */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 14px;
     }
 }
