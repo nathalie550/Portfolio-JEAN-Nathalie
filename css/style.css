@@ -335,9 +335,27 @@ li {
     }
 
     .apps img {
-        width: 70%;
+        width: 80px;
+        height: 80px;
         /* Réduire la taille des images */
     }
+
+    .shutdown-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu-button {
+        font-size: 18px;
+    }
+
+    /* Taille 'icône */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 19px;
+    }
+
 }
 
 @media all and (max-width: 500px) {
@@ -366,53 +384,24 @@ li {
     }
 
     .apps img {
-        width: 60%;
-        /* Réduire encore plus les images */
+        width: 80px;
+        height: 80px;
+        /* Réduire la taille des images */
     }
-}
 
-/************************************* MENU EN BAS ************************************/
+    .shutdown-container {
+        width: 80px;
+        height: 80px;
+    }
 
-.menu {
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    /* Réduire l'espace en haut et en bas du menu */
-    z-index: 20;
-}
+    .menu-button {
+        font-size: 18px;
+    }
 
-.menu-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 18px;
-    /* Réduire la taille des icônes */
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-/* Effet au survol des boutons */
-.menu-button:hover {
-    color: #ff4081;
-}
-
-/* Taille 'icône de retour (flèche) */
-.menu-button i.fas.fa-arrow-left {
-    font-size: 22px;
-}
-
-/*Icône Accueil */
-.menu-button i.fas.fa-home {
-    font-size: 22px;
-}
-
-/* Icône Profil */
-.menu-button i.fas.fa-user {
-    font-size: 22px;
+    /* Taille 'icône */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 19px;
+    }
 }
