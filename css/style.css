@@ -348,10 +348,10 @@ li {
     }
 
     .apps .app {
-        width: 75%;
-        /* Mettre 2 applications par ligne */
-        max-width: 150px;
-        /* Limiter la taille des applications */
+        width: 48%;
+        /* Mettre 2 applications par ligne (50% - marges) */
+        max-width: 100px;
+        /* Limiter la taille des applications à 100px */
         margin: 0;
         /* Pas de marge */
         padding: 0;
@@ -359,9 +359,10 @@ li {
     }
 
     .apps img {
-        width: 90px;
-        height: 90px;
+        width: 100px;
         /* Ajuster la taille des images */
+        height: 100px;
+        /* Garder la taille originale de l'image */
     }
 
     .shutdown-container {
@@ -424,9 +425,9 @@ li {
     }
 
     .apps .app {
-        width: 90%;
-        /* Applications de taille 45% pour 2 par ligne */
-        max-width: 120px;
+        width: 48%;
+        /* Applications de taille 50% pour 2 par ligne */
+        max-width: 100px;
         /* Limiter la taille des applications */
         margin: 0;
         /* Pas de marge */
@@ -435,9 +436,10 @@ li {
     }
 
     .apps img {
-        width: 90px;
-        height: 90px;
+        width: 100px;
         /* Ajuster la taille des images */
+        height: 100px;
+        /* Garder la taille originale de l'image */
     }
 
     .shutdown-container {
