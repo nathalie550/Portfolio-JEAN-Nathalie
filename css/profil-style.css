@@ -391,10 +391,11 @@ li {
 /***SECTION PASSION POUR L INFORMATIQUE****/
 .liste {
     width: 380px;
-    margin-top: 80px;
+    margin-top: 60px;
     background-color: #71afef;
-    border-radius: 10%;
+    /* border-radius: 10%; */
     /* box-shadow: inset 2px 2px 2px 2px rgb(13, 13, 13); */
+    padding: 15px;
 }
 
 .souris img {

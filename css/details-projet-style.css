@@ -261,7 +261,7 @@ li {
 .project-gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
