@@ -126,11 +126,11 @@ li {
 
 /**********************************STRUCTURE DU SMARTPHONE********************************/
 .smartphone {
-    width: 50vw;
+    width: 60vw;
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 500px;
+    max-width: 440px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
-    height: 90vh;
+    height: 100vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
     border: 14px solid black;
     border-radius: 60px;
@@ -224,22 +224,21 @@ li {
 
 /************************************MISE EN PAGE PROFIL*****************************/
 .screen-profil h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #71afef;
 
 }
 
 .screen-profil h3 {
-    font-size: 1.8em;
+    font-size: 1.3em;
     text-align: center;
 }
 
 .flip-card {
     background-color: transparent;
     width: 400px;
-    height: 550px;
+    height: 450px;
     perspective: 1000px;
-    /* box-shadow: inset 5px 5px 15px 6px rgb(138, 138, 140);*/
     margin-bottom: 150px;
     padding: 45px;
 }
@@ -254,11 +253,11 @@ li {
 }
 
 .flip-card h4 {
-    font-size: 1.7em;
+    font-size: 1.4em;
 }
 
 .flip-card p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .flip-card-inner {
@@ -295,7 +294,7 @@ li {
     background-color: transparent;
     font-weight: 600;
     border: 3px solid #71afef;
-    font-size: 1.2em;
+    font-size: 1em;
     box-shadow: 10px 14px 18px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -307,12 +306,12 @@ li {
 }
 
 .MesInfos {
-    padding: 30px;
+    padding: 20px;
 }
 
 .MesInfos p {
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 2.8;
 }
 
@@ -331,14 +330,14 @@ li {
 .Apropos h3 {
     width: 100%;
     font-weight: 700;
-    font-size: 2.2em;
+    font-size: 1.8em;
     text-align: center;
     color: white;
 }
 
 .Apropos p {
     /* font-weight: 500; */
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.5;
     padding: 25px;
 }
@@ -359,7 +358,7 @@ li {
 
 .souris p {
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 1.4;
     padding: 20px;
     margin-bottom: 100px;
@@ -370,7 +369,7 @@ li {
 }
 
 .souris h3 {
-    font-size: 2.6em;
+    font-size: 1.5em;
     margin-top: 30px;
     width: 100%;
     /* margin-left: 10px; */
