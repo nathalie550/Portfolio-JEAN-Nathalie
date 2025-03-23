@@ -315,10 +315,8 @@ li {
         width: 70vw;
         /* Plus large pour occuper plus d'espace */
         max-width: 400px;
-        height: 75vh;
-        /* Réduire légèrement la hauteur */
+        height: 95vh;
         border: 6px solid black;
-        /* Réduire la bordure */
     }
 
     /* Ajuster la taille de l'écran */
@@ -328,32 +326,32 @@ li {
 
     /* Application ajustée pour les petits écrans */
     .apps .app {
-        width: 48%;
+        width: 46%;
         /* Mettre 2 applications par ligne */
-        max-width: 140px;
+        max-width: 150px;
         /* Limiter la taille des applications */
     }
 
     .apps img {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         /* Réduire la taille des images */
     }
 
     .shutdown-container {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
 
     .menu-button {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     /* Taille 'icône */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 15px;
+        font-size: 14px;
     }
 
 }
@@ -365,7 +363,7 @@ li {
         width: 80vw;
         /* Largeur encore plus grande */
         max-width: 360px;
-        height: 70vh;
+        height: 90vh;
         /* Réduire légèrement la hauteur */
         border: 4px solid black;
         /* Bordure fine */
@@ -384,24 +382,24 @@ li {
     }
 
     .apps img {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         /* Réduire la taille des images */
     }
 
     .shutdown-container {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
 
     .menu-button {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     /* Taille 'icône */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
