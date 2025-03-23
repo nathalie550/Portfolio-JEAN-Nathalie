@@ -148,9 +148,9 @@ li {
 .smartphone {
     width: 60vw;
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 500px;
+    max-width: 440px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
-    height: 90vh;
+    height: 100vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
     border: 14px solid black;
     border-radius: 60px;
@@ -251,7 +251,7 @@ li {
 
 .screen-loisirs .fa-solid,
 .fas {
-    font-size: 40px;
+    font-size: 30px;
     color: blue;
     margin-left: 20px;
 }
@@ -272,7 +272,7 @@ li {
 .loisirs h2 {
     margin-top: 20px;
     /* font-weight: 600; */
-    font-size: 3em;
+    font-size: 2.4em;
     /* text-align: center; */
 }
 
@@ -293,9 +293,10 @@ li {
 
 /*********************************PARTIE MUSIQUE****************************************/
 .Note {
-    width: 100%;
+    /* width: 100%; */
     background-color: #eb9c47;
     align-items: center;
+    justify-content: center;
     box-shadow: 10px 14px 18px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -303,7 +304,7 @@ li {
     width: 50%;
     margin-left: 30px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*********************************PARTIE ANIMAUX**************************************/
