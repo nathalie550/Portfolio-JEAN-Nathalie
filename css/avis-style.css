@@ -148,9 +148,9 @@ li {
 .smartphone {
     width: 60vw;
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 500px;
+    max-width: 440px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
-    height: 90vh;
+    height: 100vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
     border: 14px solid black;
     border-radius: 60px;
@@ -167,8 +167,8 @@ li {
     justify-content: center;
     align-items: flex-start;
     /* Aligner le contenu en haut si tu veux éviter qu'il soit centré */
-    padding-top: 10px;
-    background-image: url('assets/drops-4968242_1280');
+    /* padding-top: 10px; */
+    /* background-image: url('assets/drops-4968242_1280'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -248,12 +248,12 @@ li {
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .avis-container h2 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     text-align: center;
     padding: 20px
 }
@@ -261,48 +261,47 @@ li {
 .avis {
     background: #fff;
     padding: 0px;
-    margin: 45px auto;
+    margin: 15px auto;
     /* Centre l'élément horizontalement et donne un espacement en haut et en bas */
     border-radius: 8px;
     border: 3px solid #da44df;
     box-shadow: 8px 8px 8px 8px rgb(138, 140, 138);
     width: 90%;
+    height: 250px;
     display: block;
     /* S'assure que l'élément est un bloc */
+    margin-bottom: 60px;
 }
 
 .avis-header {
     display: flex;
     flex-direction: column;
-    /* Empêche les éléments d'être en ligne, les aligne verticalement */
-    align-items: flex-start;
+    align-items: center;
+    /* Centre les éléments horizontalement */
+    justify-content: center;
+    /* Centre les éléments verticalement */
     margin-bottom: 10px;
-    padding: 20px;
 }
 
 .avis-header p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 5px;
-    /* Espace sous le p */
 }
 
 .avis-header h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
-    /* Espace sous le h4 */
 }
 
 .stars {
     margin-top: 10px;
     color: #da44df;
     display: flex;
-
 }
 
 .stars .fas {
     font-size: 1.5em;
     margin-right: 5px;
-    /* Espace entre chaque étoile */
 }
 
 .stars .far.fa-star {
@@ -312,14 +311,14 @@ li {
 
 .avis h3 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 blockquote {
     font-style: italic;
     margin-top: 10px;
     color: #555;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 /* Changer la couleur des étoiles vides */
