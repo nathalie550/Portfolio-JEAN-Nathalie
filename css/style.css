@@ -142,7 +142,6 @@ li {
     margin-top: 80px;
 }
 
-
 .screen {
     padding-top: 10px;
     background-image: url("/assets/goutte.jpg");
@@ -305,4 +304,48 @@ li {
 .shutdown-btn p {
     font-size: 15px;
     margin-top: 5px;
+}
+
+
+/*******************************MEDIA QUERIES*******************************/
+@media all and (max-width : 800px) {
+    .smartphone {
+        /*le css specifique pour les écrans plus petits que 800 px*/
+        width: 60vw;
+        /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
+        max-width: 440px;
+        /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
+        height: 100vh;
+        /* Utilisation de la hauteur de la fenêtre du navigateur */
+        border: 14px solid black;
+        border-radius: 60px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        margin: 40px auto;
+    }
+}
+
+@media all and (max-width : 500px) {
+
+    /*le css specifique pour les écrans plus petits que 500 px de large*/
+    .smartphone {
+        /*le css specifique pour les écrans plus petits que 800 px*/
+        width: 60vw;
+        /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
+        max-width: 440px;
+        /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
+        height: 100vh;
+        /* Utilisation de la hauteur de la fenêtre du navigateur */
+        border: 14px solid black;
+        border-radius: 60px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        margin: 40px auto;
+    }
+
+
 }
