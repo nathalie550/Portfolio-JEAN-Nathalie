@@ -265,8 +265,6 @@ li {
 }
 
 
-
-
 /* Bouton d'extinction rond */
 .shutdown-container {
     width: 100px;
@@ -325,13 +323,21 @@ li {
     }
 
     /* Application ajustée pour les petits écrans */
+    .apps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* Espace minimal entre les applications */
+        justify-content: space-between;
+    }
+
     .apps .app {
         width: 48%;
-        /* Mettre 2 applications par ligne, en augmentant légèrement la largeur */
+        /* Deux applications par ligne */
         max-width: 150px;
         /* Limiter la taille des applications */
-        margin: 5px 0;
-        /* Ajouter un petit espace entre les lignes */
+        margin: 0;
+        /* Pas de marge pour éviter l'espacement horizontal */
     }
 
     .apps img {
@@ -349,13 +355,12 @@ li {
         font-size: 16px;
     }
 
-    /* Taille 'icône' */
+    /* Taille des icônes */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
         font-size: 14px;
     }
-
 }
 
 @media all and (max-width: 500px) {
@@ -377,10 +382,20 @@ li {
     }
 
     /* Adapter la taille des applications */
+    .apps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* Ajouter un petit espace entre les applications */
+        justify-content: space-between;
+    }
+
     .apps .app {
         width: 45%;
         /* Applications de taille 45% pour 2 par ligne */
         max-width: 120px;
+        margin: 0;
+        /* Supprimer toute marge */
     }
 
     .apps img {
@@ -398,7 +413,7 @@ li {
         font-size: 16px;
     }
 
-    /* Taille 'icône' */
+    /* Taille des icônes */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
