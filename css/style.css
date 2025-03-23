@@ -350,9 +350,8 @@ li {
     }
 
     .apps img {
-        width: 60px;
-        height: 60px;
-        /* Réduire la taille des images */
+        width: 100px;
+        height: 100px;
     }
 
     .shutdown-container {
@@ -420,9 +419,7 @@ li {
 
     .apps img {
         width: 100px;
-        /* Ajuster la taille des images */
         height: 100px;
-        /* Garder la taille originale de l'image */
     }
 
     .shutdown-container {
