@@ -311,46 +311,66 @@ li {
 @media all and (max-width: 800px) {
     .smartphone {
         width: 80vw;
-        /* Augmente la largeur à 80% de la fenêtre */
-        max-width: 380px;
-        /* Limiter la largeur max du smartphone */
+        /* Largeur plus grande pour occuper plus d'espace */
+        max-width: 400px;
+        /* Maximum à 400px */
         height: 90vh;
-        /* Ajuster la hauteur pour plus d'espace vertical */
-        border: 8px solid black;
-        /* Réduire la largeur du bord */
+        /* Ajuster la hauteur pour plus de confort */
+        border: 6px solid black;
+        /* Réduire la bordure */
     }
 
     .screen {
         height: calc(100vh - 140px);
-        /* Ajuste la hauteur de l'écran pour plus de contenu */
-    }
-
-    .apps .app {
-        width: 60%;
-        /* Afficher 2 applications côte à côte, un peu plus grandes */
+        /* Ajuster la hauteur de l'écran */
     }
 }
 
 @media all and (max-width: 500px) {
+
+    /* Modification du smartphone pour les petits écrans */
     .smartphone {
         width: 90vw;
-        /* Largeur du smartphone à 90% de la fenêtre */
+        /* Largeur à 90% de la fenêtre */
         max-width: 360px;
-        /* Limiter la largeur max du smartphone */
         height: 85vh;
-        /* Ajuster la hauteur pour mieux occuper l'espace */
-        border: 6px solid black;
-        /* Bord encore plus fin */
-    }
-
-    .screen {
-        height: calc(100vh - 120px);
-        /* Ajuste la hauteur de l'écran */
+        border: 5px solid black;
+        /* Bordure plus fine */
     }
 
     .apps .app {
-        width: 55%;
-        /* Afficher 2 applications côte à côte avec une largeur plus grande */
-        margin-bottom: 15px;
+        width: 45%;
+        /* Pour 2 applications plus larges */
+        max-width: 120px;
+        margin-bottom: 10px;
+        /* Espacement entre les applications */
     }
+}
+
+/* Disposition horizontale des applications avec flex */
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+    /* Pour que les applications passent à la ligne si nécessaire */
+    justify-content: space-between;
+    gap: 10px;
+    /* Espacement entre les applications */
+    padding: 20px;
+}
+
+.apps .app {
+    width: 48%;
+    /* Pour 2 applications par ligne */
+    max-width: 150px;
+    /* Limiter la largeur des applications */
+    margin-bottom: 20px;
+}
+
+/* Pour la taille des images des applications */
+.apps img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: 2px solid #333;
+    /* Bordure autour des images */
 }
