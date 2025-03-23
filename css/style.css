@@ -308,41 +308,36 @@ li {
 
 
 /*******************************MEDIA QUERIES*******************************/
-@media all and (max-width : 800px) {
+@media all and (max-width: 800px) {
     .smartphone {
-        /*le css specifique pour les écrans plus petits que 800 px*/
-        width: 60vw;
+        /* La largeur du smartphone est augmentée pour les petits écrans */
+        width: 80vw;
+        /* Utiliser une largeur plus grande (80% de la fenêtre) */
         height: 100vh;
     }
 
-    .shutdown-container {
-        width: 30px;
-        height: 30px;
+    .apps .app {
+        width: 45%;
+        /* Afficher 2 applications par ligne */
     }
-
-    .apps img {
-        width: 30px;
-        height: 30px;
-    }
-
 }
 
-@media all and (max-width : 500px) {
-
-    /*le css specifique pour les écrans plus petits que 500 px de large*/
+@media all and (max-width: 500px) {
     .smartphone {
-        /*le css specifique pour les écrans plus petits que 800 px*/
-        width: 60vw;
+        /* Sur les très petits écrans, on peut augmenter la largeur à 90% pour que ça prenne plus de place */
+        width: 90vw;
+        /* Largeur à 90% de la fenêtre */
         height: 100vh;
     }
 
-    .shutdown-container {
-        width: 30px;
-        height: 30px;
+    .apps .app {
+        width: 45%;
+        /* Afficher 2 applications par ligne */
     }
 
     .apps img {
-        width: 30px;
-        height: 30px;
+        width: 100%;
+        /* Redimensionner les images pour qu'elles soient plus grandes et s'adaptent à la largeur */
+        height: auto;
     }
 }
