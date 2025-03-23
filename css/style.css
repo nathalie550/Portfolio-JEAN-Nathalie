@@ -335,25 +335,25 @@ li {
     }
 
     .apps img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         /* Réduire la taille des images */
     }
 
     .shutdown-container {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
     .menu-button {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     /* Taille 'icône */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 19px;
+        font-size: 15px;
     }
 
 }
@@ -384,24 +384,24 @@ li {
     }
 
     .apps img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         /* Réduire la taille des images */
     }
 
     .shutdown-container {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
     .menu-button {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     /* Taille 'icône */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 19px;
+        font-size: 15px;
     }
 }
