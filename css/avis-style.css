@@ -477,6 +477,29 @@ blockquote {
 
 @media all and (max-width: 500px) {
 
+    /* Ajustement de la barre en haut */
+    .topy {
+        width: 80vw;
+        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-size: cover;
+        padding: 5px 10px;
+    }
+
+    .topy p {
+        font-size: 1em;
+        margin-left: 8px;
+    }
+
+    .iTel {
+        width: 55%;
+    }
+
+    .separator {
+        width: 8vh;
+        height: 2vh;
+    }
+
+
     /* Container des avis */
     .avis-container {
         padding: 10px;
