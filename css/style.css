@@ -314,10 +314,13 @@ li {
     }
 
     .screen {
-        height: calc(100vh - 100px);
-        margin: 0;
-        padding: 0;
-        background-image: url("C:\Users\Homes\Documents\MES PROJETS LA TOILE SUR GITHUB NV\Portfolio JEAN Nathalie\assets\goutte.jpg");
+        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-size: cover;
+        /* Permet de couvrir tout l'écran */
+        background-position: center center;
+        /* Centre l'image */
+        background-repeat: no-repeat;
+        /* Empêche la répétition de l'image */
     }
 
     .login-container h2 {
@@ -370,10 +373,13 @@ li {
     }
 
     .screen {
-        height: calc(100vh - 100px);
-        margin: 0;
-        padding: 0;
-        background-image: url("C:\Users\Homes\Documents\MES PROJETS LA TOILE SUR GITHUB NV\Portfolio JEAN Nathalie\assets\goutte.jpg");
+        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-size: cover;
+        /* Permet de couvrir tout l'écran */
+        background-position: center center;
+        /* Centre l'image */
+        background-repeat: no-repeat;
+        /* Empêche la répétition de l'image */
     }
 
     .login-container h2 {
