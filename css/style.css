@@ -319,6 +319,7 @@ li {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-image: url("/assets/goutte.jpg");
     }
 
     .login-container {
@@ -331,7 +332,7 @@ li {
     }
 
     .login-container h2 {
-        font-size: 2em;
+        font-size: 3em;
         margin-top: 20px;
         color: black;
     }
@@ -339,8 +340,8 @@ li {
     .login-btn {
         background-color: #ff4081;
         color: white;
-        font-size: 18px;
-        padding: 10px 20px;
+        font-size: 22px;
+        padding: 10px 25px;
         text-decoration: none;
         border-radius: 5px;
         transition: background-color 0.3s;
@@ -366,10 +367,11 @@ li {
         height: calc(100vh - 80px);
         padding: 0;
         margin: 0;
+        background-image: url("/assets/goutte.jpg");
     }
 
     .login-container h2 {
-        font-size: 2em;
+        font-size: 3em;
         margin-top: 20px;
         color: black;
     }
