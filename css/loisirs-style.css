@@ -282,7 +282,7 @@ li {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 90%;
+    /* width: 90%; */
     height: 70%;
     border: none;
     margin-top: 20px;
@@ -342,4 +342,145 @@ li {
     margin-bottom: 25px;
     transform: rotate(-90deg);
     /* Ajout de la rotation */
+}
+
+
+/*******************************MEDIA QUERIES*******************************/
+
+@media all and (max-width: 800px) {
+
+    /* Ajuster la largeur du smartphone */
+    .smartphone {
+        width: 75vw;
+        height: 90vh;
+        border: 5px solid black;
+        border-radius: 60px;
+    }
+
+    /* Ajustement de la barre en haut */
+    .topy {
+        width: 75vw;
+    }
+
+    .topy p {
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+
+    .iTel {
+        width: 50%;
+    }
+
+    .separator {
+        width: 10vh;
+        height: 3vh;
+    }
+
+
+    /*Menu en bas avec icones*/
+    .menu {
+        padding: 10px 0;
+        justify-content: space-evenly;
+        /* Espacer uniformément les boutons */
+    }
+
+    .menu-button i {
+        font-size: 22px;/
+    }
+
+    /* réduire la taille des icônes  */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 22px;
+    }
+
+    /*PHOTOS DES ANIMAUX*/
+    .cats img {
+        width: 40%;
+        padding: 10px;
+    }
+
+    .pen img,
+    .jeu img,
+    .enquetes img {
+        width: 40%;
+    }
+}
+
+
+@media all and (max-width: 500px) {
+
+    /* Ajuster la largeur du smartphone */
+    .smartphone {
+        width: 70vw;
+        /* Réduire la largeur à 70% de la vue */
+        height: 85vh;
+        /* Ajuster la hauteur à 85% de la vue */
+        border: 4px solid black;
+        /* Réduire la bordure */
+        border-radius: 50px;
+        /* Bordure plus arrondie */
+    }
+
+    /* Ajustement de la barre en haut */
+    .topy {
+        width: 70vw;
+        /* Réduire la largeur de la barre en haut */
+    }
+
+    .topy p {
+        font-size: 1em;
+        /* Réduire la taille de la police */
+        margin-left: 5px;
+        /* Réduire l'espace de gauche */
+    }
+
+    .iTel {
+        width: 40%;
+        /* Réduire la largeur des icônes de l'état de la connexion */
+    }
+
+    .separator {
+        width: 8vh;
+        /* Réduire la largeur de la barre de séparation */
+        height: 2.5vh;
+        /* Réduire la hauteur de la barre de séparation */
+    }
+
+    /* Menu en bas avec icônes */
+    .menu {
+        padding: 8px 0;
+        /* Réduire la taille du padding */
+        justify-content: space-evenly;
+        /* Espacement uniforme entre les icônes */
+    }
+
+    .menu-button i {
+        font-size: 18px;
+        /* Réduire la taille des icônes */
+    }
+
+    /* Réduire la taille des icônes pour les boutons du menu */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 18px;
+        /* Réduire la taille des icônes */
+    }
+
+    /* PHOTOS DES ANIMAUX */
+    .cats img {
+        width: 60%;
+        /* Réduire la taille des images des chats */
+        padding: 8px;
+        /* Ajuster le padding */
+    }
+
+    .pen img,
+    .jeu img,
+    .enquetes img {
+        width: 60%;
+        /* Réduire la taille des images des autres sections */
+    }
 }

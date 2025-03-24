@@ -407,7 +407,7 @@ li {
     font-weight: 500;
     font-size: 1em;
     line-height: 1.4;
-    padding: 20px;
+    /* padding: 20px; */
     margin-bottom: 100px;
 }
 
@@ -423,4 +423,69 @@ li {
     font-weight: 600;
     text-align: center;
     color: white;
+}
+
+
+/*******************************MEDIA QUERIES*******************************/
+
+@media all and (max-width: 800px) {
+
+    /* Ajuster la largeur du smartphone */
+    .smartphone {
+        width: 75vw;
+        height: 90vh;
+        border: 5px solid black;
+        border-radius: 60px;
+    }
+
+    /* Ajustement de la barre en haut */
+    .topy {
+        width: 75vw;
+    }
+
+    .topy p {
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+
+    .iTel {
+        width: 50%;
+    }
+
+    .separator {
+        width: 10vh;
+        height: 3vh;
+    }
+
+
+    /*Menu en bas avec icones*/
+    .menu {
+        padding: 10px 0;
+        justify-content: space-evenly;
+        /* Espacer uniformément les boutons */
+    }
+
+    .menu-button i {
+        font-size: 22px;/
+    }
+
+    /* réduire la taille des icônes  */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 22px;
+    }
+
+    /*MON CV IMAGE*/
+    .cv img {
+        width: 15%;
+        max-width: 100px;
+        margin-left: 35px;
+    }
+
+    /*TITRE SECTION SOURIS*/
+    .souris h3 {
+        font-size: 2em;
+    }
+
 }
