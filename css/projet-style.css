@@ -389,18 +389,28 @@ li {
         height: 3vh;
     }
 
-    /*Menu en bas avec icones*/
+    /* Menu en bas avec icônes */
     .menu {
         padding: 10px 0;
         justify-content: space-evenly;
-        /* Espacer uniformément les boutons */
+        position: fixed;
+        /* Fixe le menu en bas */
+        bottom: 0;
+        /* Positionne le menu en bas de l'écran */
+        left: 0;
+        right: 0;
+        /* Permet au menu de s'étendre sur toute la largeur */
+        background-color: white;
+        /* Assurez-vous que le menu soit visible sur le fond */
+        box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+        /* Ajouter une légère ombre pour séparer le menu du contenu */
     }
 
     .menu-button i {
-        font-size: 22px;/
+        font-size: 22px;
     }
 
-    /* réduire la taille des icônes  */
+    /* Réduire la taille des icônes */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
@@ -459,22 +469,30 @@ li {
         height: 2.5vh;
     }
 
-    /*Menu en bas avec icones*/
+    /* Menu en bas avec icônes */
     .menu {
         padding: 10px 0;
         justify-content: space-evenly;
-        /* Espacer uniformément les boutons */
+        position: fixed;
+        /* Fixe le menu en bas */
+        bottom: 0;
+        /* Positionne le menu en bas de l'écran */
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+        /* Ajouter une légère ombre pour séparer le menu du contenu */
     }
 
     .menu-button i {
-        font-size: 22px;/
+        font-size: 18px;
     }
 
-    /* réduire la taille des icônes  */
+    /* Réduire la taille des icônes pour les boutons du menu */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     /* TITRE CONTAINER H2 */
