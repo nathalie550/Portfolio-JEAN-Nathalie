@@ -319,12 +319,13 @@ li {
 
     /* Ajuster la taille de l'écran */
     .screen-applications {
-        height: calc(100vh - 100px);
-        margin: 0;
-        padding: 0;
         background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
         background-size: cover;
         /* Permet de couvrir tout l'écran */
+        background-position: center center;
+        /* Centre l'image */
+        background-repeat: no-repeat;
+        /* Empêche la répétition de l'image */
     }
 
     .topy {
@@ -388,11 +389,13 @@ li {
     }
 
     .screen-applications {
-        height: calc(100vh - 80px);
-        /* Réduire la hauteur de l'écran */
         background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
         background-size: cover;
         /* Permet de couvrir tout l'écran */
+        background-position: center center;
+        /* Centre l'image */
+        background-repeat: no-repeat;
+        /* Empêche la répétition de l'image */
     }
 
     .topy {
@@ -400,7 +403,7 @@ li {
         background-size: cover;
         /* Permet de couvrir tout l'écran */
     }
-    
+
     /* Adapter la taille des applications */
     .apps {
         display: flex;
