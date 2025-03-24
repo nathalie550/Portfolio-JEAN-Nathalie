@@ -360,7 +360,7 @@ li {
 
 @media all and (max-width: 500px) {
     .smartphone {
-        width: 90vw;
+        width: 70vw;
         max-width: 360px;
         height: 90vh;
         border: 4px solid black;
