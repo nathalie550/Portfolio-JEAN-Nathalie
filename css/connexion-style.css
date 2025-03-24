@@ -305,32 +305,25 @@ li {
 
 @media all and (max-width: 800px) {
 
-    /* Ajuster la largeur du smartphone pour la page de connexion */
     .smartphone {
-        width: 90vw;
+        width: 70vw;
+        /* Largeur 80% de l'écran */
         max-width: 400px;
+        /* Pas plus de 400px */
         height: 95vh;
-        /* Ajuster la hauteur pour qu'il occupe plus de l'écran */
+        /* Hauteur 90% de l'écran */
         border: 5px solid black;
-        margin: 0 auto;
-        padding: 0;
-        border-radius: 15px;
-        background-image: url("/assets/goutte.jpg");
     }
 
-    /* Ajuster la taille de l'écran sur la page de connexion */
     .screen-connexion {
         height: calc(100vh - 100px);
-        /* Ajuster la taille pour qu'il y ait de la place en haut */
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90vw;
     }
 
-    /* Centrer le contenu du formulaire */
     .login-container {
         display: flex;
         flex-direction: column;
@@ -341,14 +334,15 @@ li {
     }
 
     .login-container h2 {
-        font-size: 1.5em;
-        margin-bottom: 20px;
+        font-size: 2em;
+        margin-top: 20px;
+        color: black;
     }
 
     .login-btn {
         background-color: #ff4081;
         color: white;
-        font-size: 16px;
+        font-size: 18px;
         padding: 10px 20px;
         text-decoration: none;
         border-radius: 5px;
@@ -361,8 +355,6 @@ li {
 }
 
 @media all and (max-width: 500px) {
-
-    /* Pour un smartphone encore plus petit (iPhone XS par exemple) */
     .smartphone {
         width: 90vw;
         max-width: 360px;
@@ -371,15 +363,12 @@ li {
         margin: 0 auto;
         padding: 0;
         border-radius: 12px;
-        background-image: url("/assets/goutte.jpg");
     }
 
     .screen-connexion {
         height: calc(100vh - 80px);
-        /* Ajuster la hauteur de l'écran */
         padding: 0;
         margin: 0;
-        width: 90vw;
     }
 
     .login-container h2 {
