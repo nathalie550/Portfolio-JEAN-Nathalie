@@ -354,12 +354,6 @@ li {
 /*********************************MEDIA QUERIES******************************/
 @media all and (max-width: 800px) {
 
-    /* Empêcher le défilement horizontal */
-    body {
-        overflow-x: hidden;
-        /* Désactive le scroll horizontal */
-    }
-
     /* Ajuster la largeur du smartphone */
     .smartphone {
         width: 75vw;
@@ -367,7 +361,6 @@ li {
         border: 5px solid black;
         border-radius: 60px;
     }
-
 
     /* Ajustement de la barre en haut */
     .topy {
@@ -388,6 +381,7 @@ li {
         height: 3vh;
     }
 
+
     /*Menu en bas avec icones*/
     .menu {
         padding: 10px 0;
@@ -395,16 +389,20 @@ li {
         /* Espacer uniformément les boutons */
     }
 
-
     .menu-button i {
         font-size: 22px;/
     }
 
-    /* réduire la taille des icônes  */
+    /* Réduire la taille des icônes pour chaque bouton */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+    .metiers-container {
+        grid-template-columns: 1fr;
+        /* 1 colonne sur les petits écrans */
     }
 
     /* TITRE CONTAINER H2 */
@@ -422,13 +420,9 @@ li {
     }
 }
 
-@media all and (max-width: 500px) {
 
-    /* Empêcher le défilement horizontal */
-    body {
-        overflow-x: hidden;
-        /* Désactive le scroll horizontal */
-    }
+
+@media all and (max-width: 500px) {
 
     /* Ajuster la largeur du smartphone */
     .smartphone {
@@ -436,59 +430,63 @@ li {
         height: 85vh;
         border: 4px solid black;
         border-radius: 60px;
-        overflow-y: auto;
-        /* Permettre un défilement vertical si nécessaire */
     }
 
     /* Ajustement de la barre en haut */
     .topy {
         width: 70vw;
+        background-size: cover;
+        padding: 5px 10px;
     }
 
     .topy p {
         font-size: 1em;
-        margin-left: 5px;
+        margin-left: 8px;
     }
 
     .iTel {
-        width: 40%;
+        width: 55%;
     }
 
     .separator {
         width: 8vh;
-        height: 2.5vh;
+        height: 2vh;
     }
 
-    /*Menu en bas avec icones*/
+    /* Menu en bas avec icônes */
     .menu {
-        padding: 10px 0;
+        padding: 8px 0;
         justify-content: space-evenly;
         /* Espacer uniformément les boutons */
     }
 
-
     .menu-button i {
-        font-size: 22px;/
+        font-size: 18px;
     }
 
     /* réduire la taille des icônes  */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 22px;
+        font-size: 18px;
     }
+}
 
-    /* TITRE CONTAINER H2 */
-    .projects-container h2 {
-        font-size: 1em;
-    }
+.metiers-container {
+    grid-template-columns: 1fr;
+    /* 1 colonne sur les petits écrans */
+}
 
-    .casque img {
-        width: 18%;
-    }
+/* TITRE CONTAINER H2 */
+.projects-container h2 {
+    font-size: 1em;
+}
 
-    .project-card {
-        width: 70%;
-        height: 40%;
-    }
+.casque img {
+    width: 18%;
+}
+
+.project-card {
+    width: 70%;
+    height: 40%;
 }
