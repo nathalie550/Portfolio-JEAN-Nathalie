@@ -301,3 +301,34 @@ li {
 }
 
 /*******************************MEDIA QUERIES*******************************/
+@media all and (max-width: 800px) {
+
+    /* Ajuster la largeur du smartphone sur la page de connexion */
+    .login-smartphone {
+        width: 70vw;
+        max-width: 400px;
+        height: 95vh;
+        border: 5px solid black;
+        margin: 0 auto;
+        /* Centrer le smartphone */
+        padding: 0;
+        /* Pas de padding */
+    }
+
+    /* Ajuster la taille de l'écran */
+    .login-screen {
+        height: calc(100vh - 100px);
+        /* Ajuster la taille de l'écran */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Taille des éléments dans le formulaire de connexion */
+    .login-container h2 {
+        font-size: 1.5em;
+    }
+
+    .login-btn {
+        font-size: 16px;
+    }
+}
