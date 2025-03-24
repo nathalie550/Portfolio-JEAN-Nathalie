@@ -357,12 +357,6 @@ li {
         border-radius: 60px;
     }
 
-    /* Ajustement de la barre en haut */
-    .topy {
-        width: 75vw;
-        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
-    }
-
     .topy p {
         font-size: 1.2em;
         margin-left: 10px;
@@ -395,16 +389,83 @@ li {
     .menu-button i.fas.fa-user {
         font-size: 22px;
     }
+
+
+    /*PHOTOS DES ANIMAUX*/
+    .cats img {
+        width: 39%;
+        padding: 10px;
+    }
+
+    .pen img,
+    .jeu img,
+    .enquetes img {
+        width: 39%;
+    }
 }
 
-/*PHOTOS DES ANIMAUX*/
-.cats img {
-    width: 40%;
-    padding: 10px;
-}
 
-.pen img,
-.jeu img,
-.enquetes img {
-    width: 40%;
+@media all and (max-width: 500px) {
+
+    .smartphone {
+        width: 80vw;
+        height: 85vh;
+        border: 4px solid black;
+        border-radius: 60px;
+    }
+
+    /* Ajustement de la barre en haut */
+    .topy {
+        width: 80vw;
+        background-size: cover;
+        padding: 5px 10px;
+    }
+
+    .topy p {
+        font-size: 1em;
+        margin-left: 8px;
+    }
+
+    .iTel {
+        width: 55%;
+    }
+
+    .separator {
+        width: 8vh;
+        height: 2vh;
+    }
+
+
+
+    /*Menu en bas avec icones*/
+    .menu {
+        padding: 10px 0;
+        justify-content: space-evenly;
+        /* Espacer uniformément les boutons */
+    }
+
+
+    .menu-button i {
+        font-size: 22px;/
+    }
+
+    /* réduire la taille des icônes  */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 22px;
+    }
+
+
+    /*PHOTOS DES ANIMAUX*/
+    .cats img {
+        width: 39%;
+        padding: 10px;
+    }
+
+    .pen img,
+    .jeu img,
+    .enquetes img {
+        width: 39%;
+    }
 }
