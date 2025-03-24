@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    /* background-color: #f0f0f0; */
+    background-color: #f0f0f0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -123,12 +123,32 @@ li {
 }
 
 
+/*******************POSITIONNEMENT FLECHE EN HAUT A GAUCHE POUR LE RETOUR*****************/
+
+.back-button {
+    position: relative;
+    top: -180px;
+    left: 20px;
+    font-size: 30px;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* Curseur en forme de main pour indiquer que c'est cliquable */
+    z-index: 10;
+}
+
+.back-button:hover {
+    color: #ff4081;
+    /* Change la couleur au survol*/
+}
+
 
 /**********************************STRUCTURE DU SMARTPHONE********************************/
 .smartphone {
     width: 60vw;
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 440px;
+    max-width: 410px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
     height: 100vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
@@ -139,7 +159,6 @@ li {
     overflow: hidden;
     position: relative;
     margin: 40px auto;
-    margin-top: 80px;
 }
 
 .screen {
@@ -162,13 +181,14 @@ li {
     /* Limite la hauteur à 100% de la fenêtre */
 }
 
+
 /* Personnalisation de la barre de défilement */
 .screen::-webkit-scrollbar {
     width: 8px;
 }
 
 .screen::-webkit-scrollbar-thumb {
-    background-color: #ff4081;
+    background-color: #2980b9;
     border-radius: 10px;
 }
 
@@ -177,28 +197,6 @@ li {
     /* Couleur de fond de la barre de défilement */
     border-radius: 10px;
 }
-
-.apps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-}
-
-.apps img {
-    width: 100px;
-    height: 100px;
-    border-radius: 20%;
-    border: 4px solid black;
-}
-
-.apps p {
-    color: white;
-    font-size: 1em;
-    text-align: center;
-}
-
 
 /***************************************MENU EN BAS DU SMARTPHONE***********************/
 
@@ -247,179 +245,137 @@ li {
 }
 
 
-/********************************* Styles des pages**************************************/
-.page {
-    display: none;
-    padding: 20px;
-    background-color: white;
-    height: 100%;
-    overflow-y: auto;
-}
-
-.page h1 {
-    font-size: 24px;
-}
-
-.page p {
-    font-size: 18px;
-}
 
 
-/* Bouton d'extinction rond */
-.shutdown-container {
-    width: 100px;
-    height: 100px;
-    border-radius: 20%;
-    border: 4px solid black;
-    /* margin-top: 25px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: #d32f2f;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 80px;
-}
-
-.shutdown-container:hover {
-    background-color: #c62828;
-}
-
-.shutdown-btn {
-    color: white;
-    font-size: 35px;
-    text-decoration: none;
+/************************************PAGE DE CONNEXION*****************************/
+/* Style pour la page de connexion */
+.login-container {
+    padding: 30px;
     text-align: center;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* margin-top: 50px; */
+    color: white;
+    margin-bottom: 300px;
 }
 
-.shutdown-btn i {
+.login-container h2 {
+    font-size: 4em;
+    margin-bottom: 160px;
+}
+
+
+.login-form label {
     display: block;
-    margin-bottom: 5px;
-    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 16px;
 }
 
-.shutdown-btn p {
-    font-size: 15px;
-    margin-top: 5px;
+.login-form input {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
+.login-btn {
+    background-color: white;
+    color: black;
+    padding: 30px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: red;
+}
 
 /*******************************MEDIA QUERIES*******************************/
+/* Page de connexion */
 
 @media all and (max-width: 800px) {
 
-    /* Ajuster la largeur du smartphone */
     .smartphone {
         width: 70vw;
+        /* Largeur 80% de l'écran */
         max-width: 400px;
+        /* Pas plus de 400px */
         height: 95vh;
+        /* Hauteur 90% de l'écran */
         border: 5px solid black;
     }
 
-    /* Ajuster la taille de l'écran */
     .screen {
         height: calc(100vh - 100px);
         margin: 0;
         padding: 0;
-    }
-
-    /* Application ajustée pour les petits écrans */
-    .apps {
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: space-between;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
-    /* Application ajustée pour les petits écrans */
-    .apps .app {
-        width: 46%;
-        /* Applications de taille 45% pour 2 par ligne */
-        max-width: 150px;
-        /* margin: 0;*/
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
     }
 
-
-    .apps img {
-        width: 60px;
-        height: 60px;
+    .login-container h2 {
+        font-size: 2em;
+        margin-top: 20px;
+        color: black;
     }
 
-    .shutdown-container {
-        width: 60px;
-        height: 60px;
+    .login-btn {
+        background-color: #ff4081;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
     }
 
-    .menu-button {
-        font-size: 15px;
+    .login-btn:hover {
+        background-color: #d32f2f;
     }
-
-    /* Taille 'icône */
-    .menu-button i.fas.fa-arrow-left,
-    .menu-button i.fas.fa-home,
-    .menu-button i.fas.fa-user {
-        font-size: 13px;
-    }
-
 }
 
 @media all and (max-width: 500px) {
-
-    /* Smartphone encore plus petit, par exemple iPhone XS */
     .smartphone {
-        width: 80vw;
-        /* Largeur encore plus grande */
+        width: 90vw;
         max-width: 360px;
         height: 90vh;
-        /* Réduire légèrement la hauteur */
         border: 4px solid black;
-        /* Bordure fine */
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 12px;
     }
 
     .screen {
         height: calc(100vh - 80px);
-        /* Réduire la hauteur de l'écran */
-    }
-
-    /* Adapter la taille des applications */
-    .apps {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: space-between;
-    }
-
-    /* Adapter la taille des applications */
-    .apps .app {
-        width: 45%;
-        /* Applications de taille 45% pour 2 par ligne */
-        max-width: 120px;
-        /* Limiter la taille des applications */
-        margin: 0;
         padding: 0;
-        /* Pas de padding */
+        margin: 0;
     }
 
-    .apps img {
-        width: 60px;
-        height: 60px;
+    .login-container h2 {
+        font-size: 2em;
+        margin-top: 20px;
+        color: black;
     }
 
-    .shutdown-container {
-        width: 60px;
-        height: 60px;
-    }
-
-    .menu-button {
-        font-size: 16px;
-    }
-
-    /* Taille 'icône */
-    .menu-button i.fas.fa-arrow-left,
-    .menu-button i.fas.fa-home,
-    .menu-button i.fas.fa-user {
-        font-size: 13px;
+    .login-btn {
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
