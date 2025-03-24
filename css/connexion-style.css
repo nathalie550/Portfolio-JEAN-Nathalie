@@ -313,7 +313,7 @@ li {
     }
 
     /* Ajuster la taille de l'écran */
-    .screen-connexion {
+    .screen {
         height: calc(100vh - 100px);
         margin: 0;
         padding: 0;
