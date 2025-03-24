@@ -372,8 +372,9 @@ li {
     }
 
     .login-container h2 {
-        font-size: 1.2em;
-        margin-bottom: 15px;
+        font-size: 2em;
+        margin-top: 20px;
+        color: black;
     }
 
     .login-btn {
