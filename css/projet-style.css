@@ -389,17 +389,18 @@ li {
         height: 3vh;
     }
 
-    /* Menu en bas avec icônes */
+    /*Menu en bas avec icones*/
     .menu {
         padding: 10px 0;
         justify-content: space-evenly;
+        /* Espacer uniformément les boutons */
     }
 
     .menu-button i {
-        font-size: 22px;
+        font-size: 22px;/
     }
 
-    /* Réduire la taille des icônes */
+    /* réduire la taille des icônes  */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
@@ -458,21 +459,22 @@ li {
         height: 2.5vh;
     }
 
-    /* Menu en bas avec icônes */
+    /*Menu en bas avec icones*/
     .menu {
-        padding: 8px 0;
+        padding: 10px 0;
         justify-content: space-evenly;
+        /* Espacer uniformément les boutons */
     }
 
     .menu-button i {
-        font-size: 18px;
+        font-size: 22px;/
     }
 
-    /* Réduire la taille des icônes pour les boutons du menu */
+    /* réduire la taille des icônes  */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     /* TITRE CONTAINER H2 */
