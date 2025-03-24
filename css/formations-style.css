@@ -385,26 +385,27 @@ li {
 
 @media all and (max-width: 500px) {
 
-    /* Ajuster la largeur du smartphone */
     .smartphone {
         width: 80vw;
-        height: 90vh;
-        border: 5px solid black;
+        height: 85vh;
+        border: 4px solid black;
         border-radius: 60px;
     }
 
     /* Ajustement de la barre en haut */
     .topy {
-        width: 80vw;
+        width: 70vw;
+        background-size: cover;
+        padding: 5px 10px;
     }
 
     .topy p {
-        font-size: 1.1em;
+        font-size: 1em;
         margin-left: 8px;
     }
 
     .iTel {
-        width: 50%;
+        width: 55%;
     }
 
     .separator {
@@ -412,21 +413,23 @@ li {
         height: 2vh;
     }
 
-    /* Menu en bas avec icônes */
+
+    /*Menu en bas avec icones*/
     .menu {
-        padding: 8px 0;
+        padding: 10px 0;
         justify-content: space-evenly;
+        /* Espacer uniformément les boutons */
     }
 
     .menu-button i {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    /* Réduire la taille des icônes */
+    /* réduire la taille des icônes  */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /* TITRE ON P */

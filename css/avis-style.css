@@ -477,10 +477,16 @@ blockquote {
 
 @media all and (max-width: 500px) {
 
+    .smartphone {
+        width: 80vw;
+        height: 85vh;
+        border: 4px solid black;
+        border-radius: 60px;
+    }
+
     /* Ajustement de la barre en haut */
     .topy {
-        width: 80vw;
-        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        width: 70vw;
         background-size: cover;
         padding: 5px 10px;
     }
@@ -499,101 +505,119 @@ blockquote {
         height: 2vh;
     }
 
-
-    /* Container des avis */
-    .avis-container {
-        padding: 10px;
-        /* Réduire le padding */
-        background-color: #f4f4f4;
-        border-radius: 10px;
-        max-width: 100%;
-        /* Prendre toute la largeur disponible */
-        margin: 0 auto;
-        box-sizing: border-box;
-        /* Inclure les bordures et les paddings dans la largeur totale */
+    /*Menu en bas avec icones*/
+    .menu {
+        padding: 10px 0;
+        justify-content: space-evenly;
+        /* Espacer uniformément les boutons */
     }
 
-    /* Titre de la section */
-    .avis-container h2 {
-        font-size: 1.2em;
-        /* Réduire la taille du titre */
-        text-align: center;
-        padding: 10px;
-        /* Réduire le padding */
+
+    .menu-button i {
+        font-size: 18px;
     }
 
-    /* Section des avis */
-    .avis {
-        background: #fff;
-        padding: 5px;
-        /* Réduire le padding */
-        margin: 5px auto;
-        /* Réduire les marges */
-        border-radius: 8px;
-        border: 2px solid #da44df;
-        box-shadow: 4px 4px 6px rgba(138, 140, 138, 0.5);
-        /* Réduire l'ombre */
-        height: auto;
-        /* Permet à l'élément de s'ajuster à son contenu */
-        display: block;
+    /* réduire la taille des icônes  */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 18px;
     }
+}
 
-    /* Header des avis */
-    .avis-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 5px;
-        /* Réduire l'espacement */
-    }
+/* Container des avis */
+.avis-container {
+    padding: 10px;
+    /* Réduire le padding */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    max-width: 100%;
+    /* Prendre toute la largeur disponible */
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* Inclure les bordures et les paddings dans la largeur totale */
+}
 
-    /* Texte dans le header */
-    .avis-header p {
-        font-size: 1.1em;
-        /* Réduire la taille de la police */
-        margin-bottom: 3px;
-        /* Réduire l'espacement */
-    }
+/* Titre de la section */
+.avis-container h2 {
+    font-size: 1.2em;
+    /* Réduire la taille du titre */
+    text-align: center;
+    padding: 10px;
+    /* Réduire le padding */
+}
 
-    /* Sous-titre dans le header */
-    .avis-header h4 {
-        font-size: 1.1em;
-        /* Réduire la taille de la police */
-        margin-bottom: 5px;
-        /* Réduire l'espacement */
-    }
+/* Section des avis */
+.avis {
+    background: #fff;
+    padding: 5px;
+    /* Réduire le padding */
+    margin: 5px auto;
+    /* Réduire les marges */
+    border-radius: 8px;
+    border: 2px solid #da44df;
+    box-shadow: 4px 4px 6px rgba(138, 140, 138, 0.5);
+    /* Réduire l'ombre */
+    height: auto;
+    /* Permet à l'élément de s'ajuster à son contenu */
+    display: block;
+}
 
-    /* Stars */
-    .stars {
-        margin-top: 5px;
-        /* Réduire l'espacement */
-        color: #da44df;
-        display: flex;
-        justify-content: center;
-        /* Centrer les étoiles */
-    }
+/* Header des avis */
+.avis-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    /* Réduire l'espacement */
+}
 
-    .stars .fas {
-        font-size: 1.2em;
-        /* Réduire la taille des étoiles */
-        margin-right: 3px;
-        /* Réduire l'espacement */
-    }
+/* Texte dans le header */
+.avis-header p {
+    font-size: 1.1em;
+    /* Réduire la taille de la police */
+    margin-bottom: 3px;
+    /* Réduire l'espacement */
+}
 
-    /* Texte du bloc d'avis */
-    .avis h3 {
-        margin: 0;
-        font-size: 1.3em;
-        /* Réduire la taille du texte */
-    }
+/* Sous-titre dans le header */
+.avis-header h4 {
+    font-size: 1.1em;
+    /* Réduire la taille de la police */
+    margin-bottom: 5px;
+    /* Réduire l'espacement */
+}
 
-    blockquote {
-        font-style: italic;
-        margin-top: 5px;
-        /* Réduire l'espacement */
-        color: #555;
-        font-size: 0.9em;
-        /* Réduire la taille de la police */
-    }
+/* Stars */
+.stars {
+    margin-top: 5px;
+    /* Réduire l'espacement */
+    color: #da44df;
+    display: flex;
+    justify-content: center;
+    /* Centrer les étoiles */
+}
+
+.stars .fas {
+    font-size: 1.2em;
+    /* Réduire la taille des étoiles */
+    margin-right: 3px;
+    /* Réduire l'espacement */
+}
+
+/* Texte du bloc d'avis */
+.avis h3 {
+    margin: 0;
+    font-size: 1.3em;
+    /* Réduire la taille du texte */
+}
+
+blockquote {
+    font-style: italic;
+    margin-top: 5px;
+    /* Réduire l'espacement */
+    color: #555;
+    font-size: 0.9em;
+    /* Réduire la taille de la police */
 }
