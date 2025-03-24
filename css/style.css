@@ -310,6 +310,7 @@ li {
         height: 95vh;
         /* Hauteur 90% de l'écran */
         border: 5px solid black;
+        border-radius: 60px;
     }
 
     .screen {
@@ -348,6 +349,7 @@ li {
         margin: 0 auto;
         padding: 0;
         border-radius: 12px;
+        border-radius: 60px;
     }
 
     .screen {
