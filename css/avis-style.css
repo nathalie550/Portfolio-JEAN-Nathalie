@@ -266,7 +266,7 @@ li {
     border-radius: 8px;
     border: 3px solid #da44df;
     box-shadow: 8px 8px 8px 8px rgb(138, 140, 138);
-    width: 90%;
+    /* width: 90%; */
     height: 250px;
     display: block;
     /* S'assure que l'élément est un bloc */
@@ -324,4 +324,253 @@ blockquote {
 /* Changer la couleur des étoiles vides */
 .stars .far.fa-star {
     color: #d3d3d3;
+}
+
+
+/*******************************MEDIA QUERIES*******************************/
+
+@media all and (max-width: 800px) {
+
+    /* Ajuster la largeur du smartphone */
+    .smartphone {
+        width: 75vw;
+        height: 90vh;
+        border: 5px solid black;
+        border-radius: 60px;
+    }
+
+    /* Ajustement de la barre en haut */
+    .topy {
+        width: 75vw;
+    }
+
+    .topy p {
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
+
+    .iTel {
+        width: 50%;
+    }
+
+    .separator {
+        width: 10vh;
+        height: 3vh;
+    }
+
+
+    /*Menu en bas avec icones*/
+    .menu {
+        padding: 10px 0;
+        justify-content: space-evenly;
+        /* Espacer uniformément les boutons */
+    }
+
+    .menu-button i {
+        font-size: 22px;/
+    }
+
+    /* réduire la taille des icônes  */
+    .menu-button i.fas.fa-arrow-left,
+    .menu-button i.fas.fa-home,
+    .menu-button i.fas.fa-user {
+        font-size: 22px;
+    }
+
+    .avis-container {
+        padding: 10px;
+        /* Réduire le padding */
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        max-width: 100%;
+        /* Prendre toute la largeur disponible */
+        margin: 0 auto;
+        box-sizing: border-box;
+        /* Inclure les bordures et les paddings dans la largeur totale */
+    }
+
+    /* Titre de la section */
+    .avis-container h2 {
+        font-size: 1.2em;
+        /* Réduire la taille du titre */
+        text-align: center;
+        padding: 10px;
+        /* Réduire le padding */
+    }
+
+    /* Section des avis */
+    .avis {
+        background: #fff;
+        padding: 5px;
+        /* Réduire le padding */
+        margin: 5px auto;
+        /* Réduire les marges */
+        border-radius: 8px;
+        border: 2px solid #da44df;
+        box-shadow: 4px 4px 6px rgba(138, 140, 138, 0.5);
+        /* Réduire l'ombre */
+        height: auto;
+        /* Permet à l'élément de s'ajuster à son contenu */
+        display: block;
+    }
+
+    /* Header des avis */
+    .avis-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        /* Réduire l'espacement */
+    }
+
+    /* Texte dans le header */
+    .avis-header p {
+        font-size: 1.1em;
+        /* Réduire la taille de la police */
+        margin-bottom: 3px;
+        /* Réduire l'espacement */
+    }
+
+    /* Sous-titre dans le header */
+    .avis-header h4 {
+        font-size: 1.1em;
+        /* Réduire la taille de la police */
+        margin-bottom: 5px;
+        /* Réduire l'espacement */
+    }
+
+    /* Stars */
+    .stars {
+        margin-top: 5px;
+        /* Réduire l'espacement */
+        color: #da44df;
+        display: flex;
+        justify-content: center;
+        /* Centrer les étoiles */
+    }
+
+    .stars .fas {
+        font-size: 1.2em;
+        /* Réduire la taille des étoiles */
+        margin-right: 3px;
+        /* Réduire l'espacement */
+    }
+
+    /* Texte du bloc d'avis */
+    .avis h3 {
+        margin: 0;
+        font-size: 1.3em;
+        /* Réduire la taille du texte */
+    }
+
+    blockquote {
+        font-style: italic;
+        margin-top: 5px;
+        /* Réduire l'espacement */
+        color: #555;
+        font-size: 0.9em;
+        /* Réduire la taille de la police */
+    }
+}
+
+
+@media all and (max-width: 500px) {
+
+    /* Container des avis */
+    .avis-container {
+        padding: 10px;
+        /* Réduire le padding */
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        max-width: 100%;
+        /* Prendre toute la largeur disponible */
+        margin: 0 auto;
+        box-sizing: border-box;
+        /* Inclure les bordures et les paddings dans la largeur totale */
+    }
+
+    /* Titre de la section */
+    .avis-container h2 {
+        font-size: 1.2em;
+        /* Réduire la taille du titre */
+        text-align: center;
+        padding: 10px;
+        /* Réduire le padding */
+    }
+
+    /* Section des avis */
+    .avis {
+        background: #fff;
+        padding: 5px;
+        /* Réduire le padding */
+        margin: 5px auto;
+        /* Réduire les marges */
+        border-radius: 8px;
+        border: 2px solid #da44df;
+        box-shadow: 4px 4px 6px rgba(138, 140, 138, 0.5);
+        /* Réduire l'ombre */
+        height: auto;
+        /* Permet à l'élément de s'ajuster à son contenu */
+        display: block;
+    }
+
+    /* Header des avis */
+    .avis-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        /* Réduire l'espacement */
+    }
+
+    /* Texte dans le header */
+    .avis-header p {
+        font-size: 1.1em;
+        /* Réduire la taille de la police */
+        margin-bottom: 3px;
+        /* Réduire l'espacement */
+    }
+
+    /* Sous-titre dans le header */
+    .avis-header h4 {
+        font-size: 1.1em;
+        /* Réduire la taille de la police */
+        margin-bottom: 5px;
+        /* Réduire l'espacement */
+    }
+
+    /* Stars */
+    .stars {
+        margin-top: 5px;
+        /* Réduire l'espacement */
+        color: #da44df;
+        display: flex;
+        justify-content: center;
+        /* Centrer les étoiles */
+    }
+
+    .stars .fas {
+        font-size: 1.2em;
+        /* Réduire la taille des étoiles */
+        margin-right: 3px;
+        /* Réduire l'espacement */
+    }
+
+    /* Texte du bloc d'avis */
+    .avis h3 {
+        margin: 0;
+        font-size: 1.3em;
+        /* Réduire la taille du texte */
+    }
+
+    blockquote {
+        font-style: italic;
+        margin-top: 5px;
+        /* Réduire l'espacement */
+        color: #555;
+        font-size: 0.9em;
+        /* Réduire la taille de la police */
+    }
 }
