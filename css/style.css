@@ -322,12 +322,16 @@ li {
         background-image: url("/assets/goutte.jpg");
     }
 
+    .login-container h2 {
+        font-size: 2em;
+    }
+
     .login-container {
         background-image: url("/assets/goutte.jpg");
     }
 
     .login-btn {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .login-btn:hover {
@@ -351,6 +355,10 @@ li {
         padding: 0;
         margin: 0;
         background-image: url("/assets/goutte.jpg");
+    }
+
+    .login-container h2 {
+        font-size: 2em;
     }
 
     .login-container {
