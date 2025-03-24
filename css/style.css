@@ -325,8 +325,31 @@ li {
     }
 
 
+    .login-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .login-form input {
+        width: 80%;
+        padding: 12px;
+        margin-bottom: 60px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
     .login-btn {
-        font-size: 26px;
+        background-color: white;
+        color: black;
+        padding: 30px 50px;
+        border: none;
+        border-radius: 5px;
+        font-size: 25px;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
     }
 
     .login-btn:hover {
@@ -356,8 +379,31 @@ li {
     }
 
 
+    .login-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .login-form input {
+        width: 80%;
+        padding: 12px;
+        margin-bottom: 60px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
     .login-btn {
-        font-size: 22px;
+        background-color: white;
+        color: black;
+        padding: 30px 50px;
+        border: none;
+        border-radius: 5px;
+        font-size: 25px;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
     }
 
     .login-btn:hover {
