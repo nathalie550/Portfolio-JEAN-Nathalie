@@ -113,3 +113,10 @@ function startConversation() {
 // Démarrer la conversation dès que la page est chargée
 window.onload = startConversation;
 
+
+
+/**********************************FLECHE RETOUR PRECEDENT******************/
+// script.js
+function goBack() {
+    window.history.back();
+}
