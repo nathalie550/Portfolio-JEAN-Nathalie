@@ -379,7 +379,7 @@ li {
 
     /* Smartphone encore plus petit, par exemple iPhone XS */
     .smartphone {
-        width: 80vw;
+        width: 70vw;
         /* Largeur encore plus grande */
         max-width: 360px;
         height: 95vh;

@@ -331,6 +331,7 @@ li {
 
     .login-container h2 {
         font-size: 2em;
+        margin-top: 60px;
     }
 
 
@@ -343,7 +344,7 @@ li {
     .login-form input {
         width: 80%;
         padding: 12px;
-        margin-bottom: 120px;
+        margin-bottom: 50px;
         font-size: 16px;
         border-radius: 5px;
         border: 1px solid #ccc;
@@ -358,6 +359,7 @@ li {
         font-weight: 700;
         cursor: pointer;
         text-decoration: none;
+        margin-bottom: 120px;
     }
 
     .login-btn:hover {
@@ -395,6 +397,7 @@ li {
 
     .login-container h2 {
         font-size: 2em;
+        margin-top: 60px;
     }
 
 
@@ -407,7 +410,7 @@ li {
     .login-form input {
         width: 80%;
         padding: 12px;
-        margin-bottom: 120px;
+        margin-bottom: 50px;
         font-size: 16px;
         border-radius: 5px;
         border: 1px solid #ccc;
@@ -422,6 +425,7 @@ li {
         font-weight: 700;
         cursor: pointer;
         text-decoration: none;
+        margin-bottom: 120px;
     }
 
     .login-btn:hover {
