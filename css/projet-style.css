@@ -354,12 +354,20 @@ li {
 /*********************************MEDIA QUERIES******************************/
 @media all and (max-width: 800px) {
 
+    /* Empêcher le défilement horizontal */
+    body {
+        overflow-x: hidden;
+        /* Désactive le scroll horizontal */
+    }
+
     /* Ajuster la largeur du smartphone */
     .smartphone {
         width: 75vw;
         height: 90vh;
         border: 5px solid black;
         border-radius: 60px;
+        overflow-y: auto;
+        /* Permettre un défilement vertical si nécessaire */
     }
 
     /* Ajustement de la barre en haut */
@@ -385,7 +393,6 @@ li {
     .menu {
         padding: 10px 0;
         justify-content: space-evenly;
-        /* Espacer uniformément les boutons */
     }
 
     .menu-button i {
@@ -399,7 +406,7 @@ li {
         font-size: 22px;
     }
 
-    /*TITRE CONTAINER H2*/
+    /* TITRE CONTAINER H2 */
     .projects-container h2 {
         font-size: 1.5em;
     }
@@ -412,10 +419,15 @@ li {
         width: 70%;
         height: 40%;
     }
-
 }
 
 @media all and (max-width: 500px) {
+
+    /* Empêcher le défilement horizontal */
+    body {
+        overflow-x: hidden;
+        /* Désactive le scroll horizontal */
+    }
 
     /* Ajuster la largeur du smartphone */
     .smartphone {
@@ -423,6 +435,8 @@ li {
         height: 85vh;
         border: 4px solid black;
         border-radius: 60px;
+        overflow-y: auto;
+        /* Permettre un défilement vertical si nécessaire */
     }
 
     /* Ajustement de la barre en haut */
@@ -447,9 +461,7 @@ li {
     /* Menu en bas avec icônes */
     .menu {
         padding: 8px 0;
-        /* Réduire la taille du padding */
         justify-content: space-evenly;
-        /* Espacement uniforme entre les icônes */
     }
 
     .menu-button i {
