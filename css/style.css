@@ -341,9 +341,9 @@ li {
     }
 
     .login-btn {
-        background-color: white;
+        background-color: #ff4081;
         color: black;
-        padding: 30px 50px;
+        padding: 10px 20px;
         border: none;
         border-radius: 5px;
         font-size: 25px;
@@ -395,9 +395,9 @@ li {
     }
 
     .login-btn {
-        background-color: white;
+        background-color: #ff4081;
         color: black;
-        padding: 30px 50px;
+        padding: 10px 20px;
         border: none;
         border-radius: 5px;
         font-size: 25px;
