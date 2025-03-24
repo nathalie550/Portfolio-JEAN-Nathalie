@@ -232,7 +232,7 @@ li {
 }
 
 .casque img {
-    width: 20%;
+    width: 18%;
 }
 
 .casque h2 {
@@ -403,6 +403,10 @@ li {
     .projects-container h2 {
         font-size: 1.5em;
     }
+
+    .casque img {
+        width: 18%;
+    }
 }
 
 @media all and (max-width: 500px) {
@@ -456,5 +460,9 @@ li {
     /* TITRE CONTAINER H2 */
     .projects-container h2 {
         font-size: 1em;
+    }
+
+    .casque img {
+        width: 18%;
     }
 }
