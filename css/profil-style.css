@@ -488,6 +488,12 @@ li {
         font-size: 2em;
     }
 
+    .souris p {
+        font-size: 0.9em;
+        line-height: 1.2;
+        padding: 20px;
+    }
+
 }
 
 @media all and (max-width: 500px) {
@@ -539,4 +545,23 @@ li {
     .menu-button i.fas.fa-user {
         font-size: 18px;
     }
+
+    /*MON CV IMAGE*/
+    .cv img {
+        width: 15%;
+        max-width: 100px;
+        margin-left: 35px;
+    }
+
+    /*TITRE SECTION SOURIS*/
+    .souris h3 {
+        font-size: 2em;
+    }
+
+    .souris p {
+        font-size: 0.9em;
+        line-height: 1.2;
+        padding: 20px;
+    }
+
 }
