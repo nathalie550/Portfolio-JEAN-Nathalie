@@ -407,6 +407,12 @@ li {
     .casque img {
         width: 18%;
     }
+
+    .project-card {
+        width: 70%;
+        height: 40%;
+    }
+
 }
 
 @media all and (max-width: 500px) {
@@ -464,5 +470,10 @@ li {
 
     .casque img {
         width: 18%;
+    }
+
+    .project-card {
+        width: 70%;
+        height: 40%;
     }
 }
