@@ -457,7 +457,7 @@ li {
 
     /* Ajustement de la barre en haut */
     .topy {
-        width: 80vw;
+        width: 70vw;
         background-size: cover;
         padding: 5px 10px;
     }
@@ -486,13 +486,13 @@ li {
 
 
     .menu-button i {
-        font-size: 22px;/
+        font-size: 18px;
     }
 
     /* réduire la taille des icônes  */
     .menu-button i.fas.fa-arrow-left,
     .menu-button i.fas.fa-home,
     .menu-button i.fas.fa-user {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
