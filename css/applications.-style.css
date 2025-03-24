@@ -142,7 +142,7 @@ li {
     margin-top: 80px;
 }
 
-.screen-application {
+.screen-applications {
     padding-top: 10px;
     background-image: url("/assets/goutte.jpg");
     flex: 1;
@@ -163,16 +163,16 @@ li {
 }
 
 /* Personnalisation de la barre de défilement */
-.screen-application::-webkit-scrollbar {
+.screen-applications::-webkit-scrollbar {
     width: 8px;
 }
 
-.screen-application::-webkit-scrollbar-thumb {
+.screen-applications::-webkit-scrollbar-thumb {
     background-color: #ff4081;
     border-radius: 10px;
 }
 
-.screen-application::-webkit-scrollbar-track {
+.screen-applications::-webkit-scrollbar-track {
     background-color: #f0f0f0;
     /* Couleur de fond de la barre de défilement */
     border-radius: 10px;
@@ -318,7 +318,7 @@ li {
     }
 
     /* Ajuster la taille de l'écran */
-    .screen-application {
+    .screen-applications {
         height: calc(100vh - 100px);
         margin: 0;
         padding: 0;
@@ -378,7 +378,7 @@ li {
         /* Bordure fine */
     }
 
-    .screen-application {
+    .screen-applications {
         height: calc(100vh - 80px);
         /* Réduire la hauteur de l'écran */
     }
