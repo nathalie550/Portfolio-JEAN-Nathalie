@@ -322,6 +322,7 @@ li {
 
     .login-container h2 {
         font-size: 2em;
+        color: #000;
     }
 
 
@@ -343,9 +344,9 @@ li {
     .login-btn {
         background-color: #ff4081;
         color: black;
-        padding: 10px 20px;
+        padding: 20px 20px;
         border: none;
-        border-radius: 5px;
+        border-radius: 15px;
         font-size: 25px;
         font-weight: 700;
         cursor: pointer;
@@ -376,6 +377,7 @@ li {
 
     .login-container h2 {
         font-size: 2em;
+        color: #000;
     }
 
 
@@ -397,9 +399,9 @@ li {
     .login-btn {
         background-color: #ff4081;
         color: black;
-        padding: 10px 20px;
+        padding: 20px 20px;
         border: none;
-        border-radius: 5px;
+        border-radius: 15px;
         font-size: 25px;
         font-weight: 700;
         cursor: pointer;
