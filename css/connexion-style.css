@@ -301,29 +301,3 @@ li {
 }
 
 /*******************************MEDIA QUERIES*******************************/
-
-@media all and (max-width: 800px) {
-
-    /* Ajuster la largeur du smartphone */
-    .smartphone {
-        width: 70vw;
-        max-width: 400px;
-        height: 95vh;
-        border: 5px solid black;
-    }
-
-    /* Ajuster la taille de l'écran */
-    .screen {
-        height: calc(100vh - 100px);
-        margin: 0;
-        padding: 0;
-    }
-
-    .login-container h2 {
-        font-size: 1.5em;
-    }
-
-    .login-btn {
-        font-size: 16px;
-    }
-}
