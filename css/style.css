@@ -323,6 +323,12 @@ li {
         /* Empêche la répétition de l'image */
     }
 
+    .topy {
+        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-size: cover;
+        /* Permet de couvrir tout l'écran */
+    }
+
     .login-container h2 {
         font-size: 2em;
         color: #000;
@@ -380,6 +386,13 @@ li {
         /* Centre l'image */
         background-repeat: no-repeat;
         /* Empêche la répétition de l'image */
+    }
+
+
+    .topy {
+        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-size: cover;
+        /* Permet de couvrir tout l'écran */
     }
 
     .login-container h2 {
