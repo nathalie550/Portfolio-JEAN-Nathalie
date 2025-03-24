@@ -22,11 +22,13 @@ const messagesContainer = document.getElementById('messages');
 
 // Table de réponses prédéfinies du bot
 const botResponses = {
-    "bonjour": "Bonjour ! Je suis le bot de votre portfolio. Voici mes informations principales :\n\n1. Mon email : jeannathalie@gmail.com.\n2. Mon adresse : 41 rue des cornets, 69700 GIVORS, France.\n3. Ma date de naissance : 12/07/1970.\n4. J'ai le permis de conduire de catégorie B.\n\nTu peux me poser des questions pour obtenir ces informations.",
+    "bonjour": "Bonjour ! Je suis le bot de votre portfolio. Je suis là pour te donner mes informations de contact",
+    "hello": "Je suis le bot de votre portfolio. Je suis là pour te donner mes informations de contact",
     "ton email": "Mon email est : jeannathalie@gmail.com.",
     "ton adresse": "Je réside à : 41 rue des cornets, 69700 GIVORS, France.",
     "ta date de naissance": "Je suis née le 12/07/1970.",
     "as-tu le permis ?": "J'ai le permis de conduire de catégorie B.",
+    "ton permis ?": "oui j'ai le permis de catégorie B.",
     "merci": "Avec plaisir ! 😊 Si vous avez d'autres questions, n'hésitez pas à me demander.",
     "bye": "À bientôt ! Si vous avez d'autres questions, je reste disponible.",
     "aide": "Je peux vous fournir mes coordonnées professionnelles, telles que mon email, mon adresse, ma date de naissance, ou mes informations sur le permis de conduire. Que souhaitez-vous savoir ?"
