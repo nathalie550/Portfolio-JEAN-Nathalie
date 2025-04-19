@@ -320,7 +320,7 @@ li {
     /* Ajustement de la barre en haut */
     .topy {
         width: 75vw;
-        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-image: url("/assets/goutte.jpg");
     }
 
     .topy p {
@@ -340,7 +340,7 @@ li {
 
     /* Ajuster la taille de l'écran */
     .screen-applications {
-        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-image: url("/assets/goutte.jpg");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -386,7 +386,7 @@ li {
     /* Ajustement de la barre en haut */
     .topy {
         width: 80vw;
-        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-image: url("/assets/goutte.jpg");
         background-size: cover;
         padding: 5px 10px;
     }
@@ -406,14 +406,14 @@ li {
     }
 
     .screen-applications {
-        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-image: url("/assets/goutte.jpg");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
 
     .topy {
-        background-image: url("https://github.com/nathalie550/Portfolio-JEAN-Nathalie/blob/master/assets/goutte.jpg?raw=true");
+        background-image: url("/assets/goutte.jpg");
         background-size: cover;
     }
 
