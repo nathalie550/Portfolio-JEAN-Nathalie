@@ -152,7 +152,7 @@ li {
     /* Assure que l'image couvre tout l'espace de la smartphone */
     background-position: center;
     background-repeat: no-repeat;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     /* Permet le défilement si nécessaire */
     padding: 20px;
 }
@@ -163,7 +163,7 @@ li {
 }
 
 .screen-details-projets::-webkit-scrollbar-thumb {
-    background-color: #ff4081;
+    background-color: #f92b6f;
     border-radius: 10px;
 }
 
