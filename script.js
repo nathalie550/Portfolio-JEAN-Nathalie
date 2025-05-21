@@ -25,7 +25,7 @@ const botResponses = {
     "bonjour": "Bonjour ! Je suis le bot de votre portfolio. Je suis là pour te donner mes informations de contact",
     "hello": "Je suis le bot de votre portfolio. Je suis là pour te donner mes informations de contact",
     "ton email": "Mon email est : jeannathalie@gmail.com.",
-    "ton adresse": "Je réside à : 41 rue des cornets, 69700 GIVORS, France.",
+    "ton adresse": "Je réside à 69700 GIVORS, France.",
     "ta date de naissance": "Je suis née le 12/07/1970.",
     "as-tu le permis ?": "J'ai le permis de conduire de catégorie B.",
     "ton permis ?": "oui j'ai le permis de catégorie B.",
