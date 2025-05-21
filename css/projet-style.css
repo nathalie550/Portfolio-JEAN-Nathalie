@@ -130,7 +130,7 @@ li {
     /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
     max-width: 440px;
     /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
-    height: 100vh;
+    height: 110vh;
     /* Utilisation de la hauteur de la fenêtre du navigateur */
     border: 14px solid black;
     border-radius: 60px;
@@ -289,11 +289,18 @@ li {
     /* Couleur de la barre de défilement au survol */
 }
 
+.screen-details-projets {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    height: calc(100vh - 120px);
+}
+
 /************************************LES CARDS*******************************************/
 .project-card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 8px 8px 8px 8px rgb(138, 140, 138);
+    box-shadow: 5px 5px 5px 5px rgb(138, 140, 138);
     overflow: hidden;
     width: 220px;
     border: 4px solid rgb(138, 140, 138);
@@ -332,7 +339,7 @@ li {
 .project-card:hover {
     transform: translateY(-10px);
     /* Décale la carte vers le haut */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 12px 12px 12px 12px rgb(138, 140, 138);
 }
 
 /* Bouton "En savoir plus" */

@@ -161,7 +161,6 @@ li {
     margin: 40px auto;
 }
 
-
 .screen-competences {
     flex: 1;
     display: flex;
@@ -263,7 +262,7 @@ li {
     transform-style: preserve-3d;
     animation: rotateCube 10s infinite linear;
     display: flex;
-    box-shadow: 5px 5px 15px 6px #2596be;
+    /* box-shadow: 5px 5px 15px 6px #2596be;*/
 }
 
 #cube {
@@ -294,42 +293,42 @@ li {
     transform: rotateY(0deg) translateZ(150px);
     background-color: #F7F8EB;
     border: 2px solid black;
-    box-shadow: inset 5px 5px 15px 6px rgb(138, 140, 138);
+    box-shadow: inset 3px 3px 8px 3px rgb(138, 140, 138);
 }
 
 .back {
     transform: rotateY(180deg) translateZ(150px);
     background-color: #F7F8EB;
     border: 2px solid black;
-    box-shadow: inset 5px 5px 15px 6px rgb(138, 140, 138);
+    box-shadow: inset 3px 3px 8px 3px rgb(138, 140, 138);
 }
 
 .left {
     transform: rotateY(-90deg) translateZ(150px);
     background-color: #F7F8EB;
     border: 2px solid black;
-    box-shadow: inset 5px 5px 15px 6px rgb(138, 140, 138);
+    box-shadow: inset 3px 3px 8px 3px rgb(138, 140, 138);
 }
 
 .right {
     transform: rotateY(90deg) translateZ(150px);
     background-color: #F7F8EB;
     border: 2px solid black;
-    box-shadow: inset 5px 5px 15px 6px rgb(138, 140, 138);
+    box-shadow: inset 3px 3px 8px 3px rgb(138, 140, 138);
 }
 
 .top {
     transform: rotateX(90deg) translateZ(150px);
     background-color: #F7F8EB;
     border: 2px solid black;
-    box-shadow: inset 5px 5px 15px 6px rgb(138, 140, 138);
+    box-shadow: inset 3px 3px 8px 3px rgb(138, 140, 138);
 }
 
 .bottom {
     transform: rotateX(-90deg) translateZ(150px);
     background-color: #F7F8EB;
     border: 2px solid black;
-    box-shadow: inset 5px 5px 15px 6px rgb(138, 140, 138);
+    box-shadow: inset 3px 3px 8px 3px rgb(138, 140, 138);
 }
 
 /* Images sur les faces du cube */
@@ -362,12 +361,13 @@ li {
     background-color: #2596be;
     width: 100%;
     padding: 20px;
-    border: 4px solid black;
+    border: 4px solid rgb(54, 52, 52);
     margin-bottom: 70px;
 }
 
 .logiciels h3 {
     font-size: 1.4em;
+    color: rgb(54, 52, 52);
 }
 
 .logiciels p {
