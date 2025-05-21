@@ -144,34 +144,28 @@ li {
 .screen-details-projets {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    /* <-- affiche les projets les uns sous les autres */
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* <-- pour éviter de tout centrer */
     padding-top: 10px;
     background-image: url('assets/drops-4968242_1280');
     background-size: cover;
     /* Assure que l'image couvre tout l'espace de la smartphone */
     background-position: center;
     background-repeat: no-repeat;
-    /*overflow-y: auto;*/
+    overflow-y: auto;
     /* Permet le défilement si nécessaire */
-    padding: 20px;
+    padding: 0px;
+    height: calc(100vh - 120px);
+    /* Définit la hauteur de l'écran pour qu'il occupe toute la fenêtre */
+    max-height: 100vh;
+    /* Limite la hauteur à 100% de la fenêtre */
+    margin-bottom: 60px;
 }
 
-/* Personnalisation de la barre de défilement */
-.screen-details-projets::-webkit-scrollbar {
-    width: 8px;
-}
 
-.screen-details-projets::-webkit-scrollbar-thumb {
-    background-color: #f92b6f;
-    border-radius: 10px;
-}
-
-.screen-details-projets::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-    /* Couleur de fond de la barre de défilement */
-    border-radius: 10px;
-}
 
 
 
