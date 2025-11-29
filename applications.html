@@ -11,10 +11,22 @@
 
 <body>
 
-    <!-- Structure tablette -->
+    <!-- STRUCTURE TABLETTE -->
     <div class="tablette">
+        <!-- Bouton argenté du haut -->
+        <div class="bouton-argente"></div>
 
-        <div class="bouton-argente top"></div>
+        <!-- Bouton en bas Home (argenté, va vers applications.html) -->
+        <a href="applications.html" class="menu-button" aria-label="Accueil">
+            <div class="bouton-argente bottom"></div>
+        </a>
+
+        <!-- Bouton en bas retour -->
+        <a href="javascript:void(0);" class="menu-button" aria-label="Retour" onclick="goBack()">
+            <img src="https://img.icons8.com/ios-filled/50/C0C0C0/u-turn-to-left.png" alt="Retour" class="icon-retour">
+        </a>
+
+
 
         <!-- Top avec l'heure et les icônes en haut-->
         <div class="topy">
@@ -27,7 +39,9 @@
         </div>
 
 
+        <!-- Informations  tablette -->
         <div class="screen-applications">
+
             <h1>Bienvenue dans le portfolio de <em>Nathalie</em> </h1>
 
             <!-- Mon écran principal -->
@@ -98,20 +112,7 @@
             </div>
         </div>
 
-        <!-- Menu en bas -->
-        <!--Aria label pour améliorer l'accessibilité de mon portfolio pour les utilisateurs de lecteurs d'écran en décrivant les fonctions -->
-        <div class="menu">
-            <!-- Bouton Home (argenté, va vers applications.html) -->
-            <a href="index.html" class="menu-button" aria-label="Accueil">
-                <div class="bouton-argente bottom"></div>
-            </a>
 
-            <!-- Bouton Retour -->
-            <a href="javascript:void(0);" class="menu-button" aria-label="Retour" onclick="goBack()">
-                <img src="https://img.icons8.com/ios-filled/50/C0C0C0/u-turn-to-left.png" alt="Retour"
-                    class="icon-retour">
-            </a>
-        </div>
     </div>
 
     <script src="script.js">

@@ -100,6 +100,7 @@ li {
 
 .container {
     max-width: 62.5rem;
+    /* 1000px */
     /*Ds container tjs mettre ls propriétés max width et with*/
     width: 100%;
     margin: auto;
@@ -109,11 +110,11 @@ li {
 
 
 
-/******************************STRUCTURE DU FORMAT TABLETTE*******************************/
+/*************************************STRUCTURE DU FORMAT TABLETTE******************************************/
 .tablette {
     width: 80vw;
     max-width: 768px;
-    height: calc(150vh - 5rem);
+    height: calc(120vh - 5rem);
     border-top: 4.4rem solid black;
     border-bottom: 4.4rem solid black;
     border-left: 2.2rem solid black;
@@ -126,9 +127,12 @@ li {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
+/* EN HAUT Boutons argentés en haut de la tablette*/
 .bouton-argente {
+    top: -2.5rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -139,10 +143,31 @@ li {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3), inset 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.7);
 }
 
-/* Position haut */
-.bouton-argente.top {
-    margin-top: -2.5rem;
+
+/* EN BAS Boutons argentés de la tablette*/
+.menu-button .icon-retour {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    bottom: -4.5rem;
+    top: 102%;
+    left: 72%;
+    filter: drop-shadow(0 0 0.125rem #aaa);
 }
+
+.bouton-argente.bottom {
+    bottom: -2.5rem;
+    position: absolute;
+    left: 50%;
+    top: 102%;
+    transform: translateX(-50%);
+    width: 6.8rem;
+    height: 1.8rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(90deg, #0b0b0b, #0d0d0d);
+    box-shadow: 0.19rem 0.19rem rgba(0, 0, 0, 0.3), inset 0.06rem 0.06rem 0.13rem 0.19rem rgba(255, 255, 255, 0.7);
+}
+
 
 
 /****************************HAUT DE L ECRAN AVEC LES ICONES****************************/
@@ -177,8 +202,8 @@ li {
 .screen-applications {
     overflow-y: auto;
     /* Permet le défilement vertical */
-    height: calc(100dvh - 5rem);
-    max-height: calc(100dvh - 5rem);
+    height: calc(100dvh - 6rem);
+    max-height: calc(100dvh - 6rem);
     box-sizing: border-box;
 }
 
@@ -196,11 +221,11 @@ li {
 .apps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 colonnes partout */
     gap: 2.5rem;
     padding: 0.6rem;
     overflow-y: auto;
     /* si jamais ça dépasse */
+    margin-left: 1.5rem;
 }
 
 .apps img {
@@ -217,38 +242,7 @@ li {
 
 
 
-/***************************************MENU EN BAS TABLETTE*****************************/
-.menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.9rem 0;
-    z-index: 20;
-}
 
-.menu-button .icon-retour {
-    width: 1.5rem;
-    height: 1.5rem;
-    position: relative;
-    bottom: -4.5rem;
-    filter: drop-shadow(0 0 0.125rem #aaa);
-}
-
-.bouton-argente.bottom {
-    bottom: -3.12rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 6.8rem;
-    height: 1.8rem;
-    border-radius: 1.25rem;
-    background: linear-gradient(90deg, #0b0b0b, #0d0d0d);
-    box-shadow: 0.19rem 0.19rem rgba(0, 0, 0, 0.3), inset 0.06rem 0.06rem 0.13rem 0.19rem rgba(255, 255, 255, 0.7);
-}
 
 
 /*******************************MEDIA QUERIES***********************************/
@@ -269,28 +263,9 @@ li {
     .bouton-argente {
         width: 6rem;
         height: 0.5rem;
+        margin-top: 1rem;
     }
 
-    .menu-button .icon-retour {
-        width: 1.6rem;
-        height: 1.3rem;
-        bottom: -3rem;
-    }
-
-    .bouton-argente.bottom {
-        bottom: -1.9rem;
-        width: 3rem;
-        height: 1.2rem;
-    }
-
-    /* Contenu */
-    .date {
-        font-size: 1.6rem;
-    }
-
-    .heure {
-        font-size: 3rem;
-    }
 
 
     /* Conteneur des compétences */
@@ -321,23 +296,26 @@ li {
     .tablette {
         width: 90vw;
         max-width: 22rem;
-        height: calc(100vh - 4rem);
-        border-top: 2rem solid black;
+        height: calc(110vh - 4rem);
+        border-top: 2.5rem solid black;
         border-bottom: 2rem solid black;
         border-left: 1rem solid black;
         border-right: 1rem solid black;
-        border-radius: 2rem;
         margin-top: 5rem;
+        border-bottom: 3.4rem solid black;
     }
 
-    .bouton-argente.top {
-        margin-top: -1rem;
+    .bouton-argente {
+        width: 6rem;
+        height: 0.4rem;
+        top: -1.6rem;
     }
 
     .bouton-argente.bottom {
         bottom: -1.5rem;
         width: 3.5rem;
         height: 1rem;
+
     }
 
     .menu-button .icon-retour {
@@ -345,6 +323,7 @@ li {
         width: 1.3rem;
         height: 1.1rem;
     }
+
 
     /* Contenu */
     .date {

@@ -110,7 +110,7 @@ li {
 
 
 
-/******************************STRUCTURE DU FORMAT TABLETTE*******************************/
+/*************************************STRUCTURE DU FORMAT TABLETTE******************************************/
 .tablette {
     width: 80vw;
     max-width: 768px;
@@ -128,9 +128,12 @@ li {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
+/* EN HAUT Boutons argentés en haut de la tablette*/
 .bouton-argente {
+    top: -2.5rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -141,9 +144,29 @@ li {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3), inset 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.7);
 }
 
-/* Position haut */
-.bouton-argente.top {
-    margin-top: -2.5rem;
+
+/* EN BAS Boutons argentés de la tablette*/
+.menu-button .icon-retour {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    bottom: -4.5rem;
+    top: 102%;
+    left: 72%;
+    filter: drop-shadow(0 0 0.125rem #aaa);
+}
+
+.bouton-argente.bottom {
+    bottom: -2.5rem;
+    position: absolute;
+    left: 50%;
+    top: 102%;
+    transform: translateX(-50%);
+    width: 6.8rem;
+    height: 1.8rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(90deg, #0b0b0b, #0d0d0d);
+    box-shadow: 0.19rem 0.19rem rgba(0, 0, 0, 0.3), inset 0.06rem 0.06rem 0.13rem 0.19rem rgba(255, 255, 255, 0.7);
 }
 
 
@@ -223,7 +246,7 @@ li {
 /*******************************ICONE CAMERA ET TORCHE*************************/
 .iconesTorcheCamera {
     display: flex;
-    margin-top: 21.8rem;
+    margin-top: 17.5rem;
     width: 43.7rem;
     height: 7.5rem;
     gap: 26.2rem;
@@ -236,43 +259,10 @@ li {
     height: 5rem;
     object-fit: cover;
     display: block;
-    margin-top: 1.2rem;
+    margin-top: 1.4rem;
     opacity: 60%;
 }
 
-
-/***************************************MENU EN BAS TABLETTE*****************************/
-.menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.9rem 0;
-    z-index: 20;
-}
-
-.menu-button .icon-retour {
-    width: 1.5rem;
-    height: 1.5rem;
-    position: relative;
-    bottom: -4.5rem;
-    filter: drop-shadow(0 0 0.125rem #aaa);
-}
-
-.bouton-argente.bottom {
-    bottom: -3.12rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 6.8rem;
-    height: 1.8rem;
-    border-radius: 1.25rem;
-    background: linear-gradient(90deg, #0b0b0b, #0d0d0d);
-    box-shadow: 0.19rem 0.19rem rgba(0, 0, 0, 0.3), inset 0.06rem 0.06rem 0.13rem 0.19rem rgba(255, 255, 255, 0.7);
-}
 
 
 /*******************************MEDIA QUERIES***********************************/
@@ -283,73 +273,16 @@ li {
         width: 90%;
         max-width: 48rem;
         height: auto;
-        border: 0.35rem solid black;
-        border-radius: 2rem;
         margin: 5rem auto;
-        position: relative;
     }
 
     /* Boutons */
     .bouton-argente {
         width: 6rem;
         height: 0.5rem;
+        margin-top: 1rem;
     }
 
-    .menu-button .icon-retour {
-        width: 1.6rem;
-        height: 1.3rem;
-        bottom: -3rem;
-    }
-
-    .bouton-argente.bottom {
-        bottom: -1.9rem;
-        width: 3rem;
-        height: 1.2rem;
-    }
-
-    /* Contenu */
-    .date {
-        font-size: 1.6rem;
-    }
-
-    .heure {
-        font-size: 3rem;
-    }
-
-    .notifications {
-        width: 90%;
-        padding: 0.5rem;
-        margin: 0.5rem auto;
-        gap: 0.5rem;
-    }
-
-    .notifications p {
-        font-size: 1rem;
-    }
-
-    .phrase img {
-        width: 1.6rem;
-    }
-
-    .site {
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    /* Icônes torche et caméra */
-    .iconesTorcheCamera {
-        margin: 3rem auto;
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-    }
-
-    .torche img,
-    .camera img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
 }
 
 /******************************POUR FORMAT MOBILE**********************************/
@@ -357,17 +290,19 @@ li {
     .tablette {
         width: 90vw;
         max-width: 22rem;
-        height: calc(100vh - 4rem);
-        border-top: 2rem solid black;
+        height: calc(110vh - 4rem);
+        border-top: 2.5rem solid black;
         border-bottom: 2rem solid black;
         border-left: 1rem solid black;
         border-right: 1rem solid black;
-        border-radius: 2rem;
         margin-top: 5rem;
+        border-bottom: 3.4rem solid black;
     }
 
-    .bouton-argente.top {
-        margin-top: -1rem;
+    .bouton-argente {
+        width: 6rem;
+        height: 0.4rem;
+        top: -1.6rem;
     }
 
     .bouton-argente.bottom {
@@ -384,67 +319,58 @@ li {
 
     /* Contenu */
     .date {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        margin-bottom: 4.5rem;
     }
 
     .heure {
         font-size: 2.6rem;
     }
 
+    /*Notifications*/
     .notifications {
-        width: 90%;
-        margin: 0.5rem auto;
-        padding: 0.4rem;
-        display: flex;
-        flex-direction: column;
+        width: 85%;
+        height: auto;
+        margin-left: 1rem;
+        margin-top: 2rem;
     }
 
     .phrase {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 0.8rem;
         width: 100%;
-    }
-
-    .notifications p {
-        font-size: 0.6rem;
-        margin: 0;
+        margin-top: 0.6rem;
     }
 
     .phrase img {
-        width: 1.1rem;
-        height: 1.1rem;
+        width: 1.8rem;
+        height: 1.8rem;
     }
 
     .site {
-        font-size: 0.65rem;
-        flex: 1;
-        /* prend l’espace restant */
-        margin-right: 0.4rem;
-        white-space: nowrap;
-        /* reste sur une ligne */
-        overflow: hidden;
+        width: 80%;
+        margin-left: 0.9rem;
+        font-size: 1.2rem;
     }
 
+    /*Phrase découvrir portfolio*/
     .notifications a {
-        font-size: 0.65rem;
-        white-space: nowrap;
-        /* "1m ago" reste toujours sur une seule ligne */
+        font-size: 1.3rem;
+        margin-left: 0.3rem;
     }
 
-    /* Icônes torche et caméra */
     .iconesTorcheCamera {
-        margin: 8.5rem auto;
-        width: 90%;
         display: flex;
-        justify-content: space-around;
-        gap: 4.5rem;
+        margin-top: 9.8rem;
+        width: 43.7rem;
+        height: 7.5rem;
+        gap: 10rem;
+        margin-left: 4rem;
     }
 
     .torche img,
     .camera img {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
+        margin-top: 1.2rem;
     }
+
 }
