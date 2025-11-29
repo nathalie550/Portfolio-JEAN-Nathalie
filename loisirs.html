@@ -4,106 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes loisirs Smartphone JEAN Nathalie</title>
-    <link rel="stylesheet" href="css/loisirs-style.css">
+    <title>Mes loisirs - Mon Portfolio JEAN Nathalie</title>
+    <link rel="stylesheet" href="css/loisirs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Structure du smartphone -->
-    <div class="smartphone">
-
-        <!-- Top avec l'heure et les icônes en haut du smartphone -->
-        <div class="topy spaceBetween flex">
-            <p>14:30</p>
-            <!-- Div qui représente la barre noire entre l'heure et les icônes -->
-            <div class="separator"></div>
+    <!-- Structure tablette-->
+    <div class="tablette">
+        <div class="bouton-argente top"></div>
+        <!-- Top avec l'heure et les icônes en haut -->
+        <div class="topy">
             <div class="iTel">
                 <i class="fa-solid fa-signal"></i>
                 <i class="fa-solid fa-wifi"></i>
                 <i class="fa-solid fa-battery-three-quarters"></i>
             </div>
+            <p>14:30</p>
         </div>
 
+        <div class="titreLoisirs">
+            <h2>LOISIRS</h2>
+        </div>
 
-        <div class="screen-loisirs">
+        <!-- Menu cliquable des loisirs -->
+        <div class="screen-loisirs flex">
 
-            <!-- Mon écran principal -->
-            <div class="loisirs">
-                <h2>Mes loisirs</h2>
+            <a href="loisirs-details.html#musique" class="menu-button" aria-label="Loisirs">
+                <img src="/assets/note.png" alt="Note musique">Musique
+            </a>
 
-                <div class="Note flex">
-                    <i class="fa-solid fa-music"></i> <!-- Icône note de musique -->
-                    <p>LA MUSIQUE</p>
-                </div>
+            <a href="loisirs-details.html#dessin" class="menu-button" aria-label="Loisirs">
+                <img src="/assets/crayon.png" alt="Crayon dessins">Dessins
+            </a>
 
-                <!-- Partie musique -->
-                <div class="box">
-                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"
-                        title="YouTube video player"></iframe>
-                </div>
+            <a href="loisirs-details.html#animaux" class="menu-button" aria-label="Loisirs">
+                <img src="/assets/patteAnimal.png" alt="Empreinte animal">Animaux
+            </a>
 
-                <div class="Note flex">
-                    <i class="fa-solid fa-paw"></i> <!-- Icône patte d animal -->
-                    <p>LES ANIMAUX</p>
-                </div>
+            <a href="loisirs-details.html#faitsdivers" class="menu-button" aria-label="Loisirs">
+                <img src="/assets/faitDivers.png" alt="Fait divers">Fait divers
+            </a>
 
-                <!-- Partie animaux-->
-                <div class="cats flex">
-                    <img class="width35" src="assets/chaton.jpg" alt="Chaton">
-                    <img class="width35" src="assets/leopards.jpg" alt="Leopards">
-                </div>
+            <a href="loisirs-details.html#jeux" class="menu-button" aria-label="Loisirs">
+                <img src="/assets/manette.png" alt="Manette de jeu">Jeux
+            </a>
 
 
-                <!-- Partie dessin-->
-                <div class="Note flex">
-                    <i class="fa-solid fa-pencil"></i> <!-- Icône crayon -->
-                    <p>LE DESSIN</p>
-                </div>
-                <div class="pen flex">
-                    <img class="width35" src="assets/soleil.jpg" alt="Soleil">
-                </div>
-
-                <!-- Partie jeux vidéos-->
-                <div class="Note flex">
-                    <i class="fa-solid fa-gamepad"></i><!-- Icône jeux vidéos manette -->
-                    <p>JEUX VIDEOS</p>
-                </div>
-                <div class="jeu flex">
-                    <img src="assets/gamer.jpg" alt="Manette">
-                </div>
-
-                <!-- Partie faits divers-->
-                <div class="Note flex">
-                    <i class="fas fa-search"></i><!-- Icône jeux vidéos manette -->
-                    <p>FAITS DIVERS</p>
-                </div>
-                <div class="enquetes flex">
-                    <img src="assets/enquetes.jpg" alt="Manette">
-                </div>
-
-
-            </div>
 
         </div>
 
 
-        <!-- Menu en bas du smartphone -->
+        <!-- Menu en bas tablette -->
         <!--Aria label pour améliorer l'accessibilité de mon portfolio pour les utilisateurs de lecteurs d'écran en décrivant les fonctions -->
         <div class="menu">
+            <!-- Bouton Home (argenté, va vers applications.html) -->
+            <a href="index.html" class="menu-button" aria-label="Accueil">
+                <div class="bouton-argente bottom"></div>
+            </a>
+
+            <!-- Bouton Retour -->
             <a href="javascript:void(0);" class="menu-button" aria-label="Retour" onclick="goBack()">
-                <i class="fas fa-arrow-left"></i>
-            </a>
-            <a href="applications.html" class="menu-button" aria-label="Retour à l'accueil">
-                <i class="fas fa-home"></i>
-            </a>
-            <a href="profil.html" class="menu-button" aria-label="Mon profil">
-                <i class="fas fa-user"></i>
+                <img src="https://img.icons8.com/ios-filled/50/C0C0C0/u-turn-to-left.png" alt="Retour"
+                    class="icon-retour">
             </a>
         </div>
 
+
     </div>
+
 
     <script src="script.js"></script>
 </body>

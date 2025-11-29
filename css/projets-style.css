@@ -125,20 +125,19 @@ li {
 
 
 /**********************************STRUCTURE DU SMARTPHONE********************************/
-.smartphone {
-    width: 60vw;
-    /* Utilisation de la largeur de la fenêtre du navigateur pour être réactif */
-    max-width: 440px;
-    /* Maximum 500px pour ne pas devenir trop grand sur un écran de PC */
-    height: 100vh;
-    /* Utilisation de la hauteur de la fenêtre du navigateur */
-    border: 14px solid black;
-    border-radius: 60px;
+.tablette {
+    width: 80vw;
+    max-width: 768px;
+    height: calc(150vh - 80px);
+    /* tablette plus grande que la fenêtre pour voir le cadre complet */
+    border: 20px solid black;
+    border-radius: 40px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    /* garde le cadre propre */
     position: relative;
-    margin: 40px auto;
+    margin-top: 350px;
 }
 
 .screen-projets {
@@ -147,8 +146,9 @@ li {
     justify-content: center;
     align-items: flex-start;
     padding-top: 10px;
+    background-image: url("https://raw.githubusercontent.com/nathalie550/Portfolio-JEAN-Nathalie/master/assets/goutte.jpg");
     background-size: cover;
-    /* Assure que l'image couvre tout l'espace de la smartphone */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow-y: auto;

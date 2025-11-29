@@ -4,101 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil - Mon Portfolio Smartphone JEAN Nathalie</title>
-    <link rel="stylesheet" href="css/profil-style.css">
+    <title>Profil - Mon Portfolio JEAN Nathalie</title>
+    <link rel="stylesheet" href="css/profil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <!-- Le contenu du smartphone -->
-    <div class="smartphone">
+    <!-- Structure de la tablette-->
+    <div class="tablette">
 
-        <!-- Top avec l'heure et les icônes en haut du smartphone -->
-        <div class="topy spaceBetween flex">
-            <p>14:30</p>
-            <!-- Div qui représente la barre noire entre l'heure et les icônes -->
-            <div class="separator"></div>
+        <div class="bouton-argente top"></div>
+
+        <!-- Top avec l'heure et les icônes en haut-->
+        <div class="topy">
             <div class="iTel">
                 <i class="fa-solid fa-signal"></i>
                 <i class="fa-solid fa-wifi"></i>
                 <i class="fa-solid fa-battery-three-quarters"></i>
             </div>
+            <p>14:30</p>
         </div>
 
+        <div class="screen-profil">
 
-        <!-- CONTENU DE LA PAGE MON PROFIL-->
-        <div class="screen-profil flex">
+            <div class="me">
+                <h2>Bienvenue sur mon profil</h2>
+                <!-- Photo avatar -->
+                <div class="contenu">
+                    <img src="assets/maPhoto.png" alt="Ma photo">
 
-            <h2>MON PROFIL</h2>
-            <h3>Survolez l'image pour voir mes infos:</h3>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/Image3.png" alt="Moi">
-                        <h4>Nathalie JEAN</h4>
-                        <p>Apprentie développeuse web</p>
-                        <p>Formation la Toile</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <!--Paragraphe à propos de moi-->
-                        <div class="Apropos container flex spaceBetween ">
-                            <h3>A propos de moi</h3>
-                            <p>En reconversion professionnelle, je suis passionnée par la création de sites
-                                web et je cherche à utiliser mes compétences pour contribuer au succès de votre
-                                entreprise. Formée aux différents langages, je mets mon adaptabilité et ma capacité à
-                                travailler en
-                                équipe au service des projets qui me sont confiés.
-                            </p>
-                        </div>
+                    <!-- Icônes autour de la photo -->
+                    <div class="icons-circle">
+                        <a href="Apropos.html" aria-label="À propos" class="icon apropos">
+                            <img src="/assets/Apropos.png" alt="A propos de moi" class="icon-apropos">
+                        </a>
+                        <a href="https://www.linkedin.com/in/nathalie-jean-315311316/" target="_blank"
+                            aria-label="LinkedIn" class="icon linkedin">
+                            <img src="/assets/linkedin.png" alt="Linkedin" class="icon-linkedin">
+                        </a>
+                        <a href="/assets/JEAN Nathalie CV.pdf" target="_blank" aria-label="Mon CV" class="icon cv">
+                            <img src="/assets/MonCv.png" alt="Mon cv" class="icon-cv">
+                        </a>
 
                     </div>
                 </div>
-
-
-                <div class="flex">
-                    <div class="cv">
-                        <h3>MON CV</h3>
-                        <div class="cv-content">
-                            <img src="assets/cv.png" alt="Mon CV">
-                            <a href="assets/CV JEAN Nathalie.pdf" target="_blank" class="cv-link">Télécharger mon CV</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- SECTION PASSIONNEE D INFORMATIQUE -->
-                <div class="liste flex container gap">
-                    <div class="souris">
-                        <h3>Pourquoi suis-je passionnée par l'informatique ?</h3>
-                        <img src="assets/informatique.png" alt="souris" width="120" height="120">
-                        <p>Je suis passionnée par l'informatique car j'adore réfléchir à la conception de
-                            projets, les mettre en œuvre et laisser libre cours à mon imagination. La création de
-                            solutions innovantes et l'exploration des nouvelles technologies me fascinent. C'est
-                            pourquoi je souhaite devenir développeuse web, afin de transformer mes idées en réalités
-                            numériques et contribuer à des projets impactants. </p>
-                    </div>
-                </div>
-
 
             </div>
 
 
-
-            <!-- Menu en bas du smartphone -->
+            <!-- Menu en bas tablette -->
+            <!--Aria label pour améliorer l'accessibilité de mon portfolio pour les utilisateurs de lecteurs d'écran en décrivant les fonctions -->
             <div class="menu">
+                <!-- Bouton Home (argenté, va vers applications.html) -->
+                <a href="applications.html" class="menu-button" aria-label="Accueil">
+                    <div class="bouton-argente bottom"></div>
+                </a>
+
+                <!-- Bouton Retour -->
                 <a href="javascript:void(0);" class="menu-button" aria-label="Retour" onclick="goBack()">
-                    <i class="fas fa-arrow-left"></i>
-                </a>
-                <a href="applications.html" class="menu-button" aria-label="Retour à l'accueil">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="profil.html" class="menu-button" aria-label="Mon profil">
-                    <i class="fas fa-user"></i>
+                    <img src="https://img.icons8.com/ios-filled/50/C0C0C0/u-turn-to-left.png" alt="Retour"
+                        class="icon-retour">
                 </a>
             </div>
+
         </div>
+
     </div>
+
 
     <script src="script.js"></script>
 </body>

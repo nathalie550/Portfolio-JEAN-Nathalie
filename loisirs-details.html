@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes loisirs - Mon Portfolio JEAN Nathalie</title>
+    <link rel="stylesheet" href="css/loisirs-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Structure de la tablette-->
+    <div class="tablette">
+
+        <div class="bouton-argente top"></div>
+
+        <!-- Top avec l'heure et les icônes en haut-->
+        <div class="topy">
+            <div class="iTel">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-three-quarters"></i>
+            </div>
+            <p>14:30</p>
+        </div>
+
+        <div class="screen-loisirsDetails">
+            <!-- Partie musique-->
+            <h3>MUSIQUE</h3>
+            <div class="detente" id="musique">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                    title="YouTube video player"></iframe>
+
+                <p>""La musique nous fait voyager, nous évader et parfois même nous retrouver. Elle peut nous mettre de
+                    bonne humeur, réveiller des souvenirs précieux ou simplement nous faire rêver un instant. Chaque
+                    note raconte une histoire, chaque mélodie résonne avec nos émotions." "</p>
+            </div>
+
+            <!-- Partie animaux-->
+            <h3>ANIMAUX</h3>
+            <div class="detente" id="animaux">
+                <img src="assets/chaton.jpg" alt="Chaton">
+
+                <p>"Mon chat est un vrai rayon de soleil : il me fait rire, m’apaise avec ses ronrons et sa présence
+                    fidèle. Sa beauté et sa douceur en font un compagnon unique, un véritable cadeau du ciel, comme me
+                    l’a dit l’assistante vétérinaire."</p>
+            </div>
+
+            <!-- Partie dessins-->
+            <h3>LE DESSIN</h3>
+            <div class="detente" id="dessin">
+                <img src="assets/soleil.jpg" alt="Soleil">
+
+                <p>"Depuis toute petite, je dessine par envie et par passion. Je n’ai pas pu faire les Beaux-Arts, ce
+                    qui m’aurait énormément plu, mais j’aime créer malgré tout, même si mes dessins ne sont pas
+                    parfaits. Chaque trait est un plaisir et une expression de ma créativité."</p>
+            </div>
+
+            <!-- Partie jeux vidéos-->
+            <h3>JEUX VIDEOS</h3>
+            <div class="detente" id="jeux">
+                <img src="assets/gamer.jpg" alt="Manette">
+
+                <p>"Depuis mon enfance, je joue aux jeux vidéo, et aujourd’hui je découvre aussi les jeux sur téléphone.
+                    J’aime les jeux de logique, de stratégie ou de société… le plaisir du jeu reste le même, celui de se
+                    challenger, réfléchir et s’amuser."</p>
+            </div>
+
+            <!-- Partie faits divers-->
+            <h3>FAITS DIVERS</h3>
+            <div class="detente" id="faitsdivers">
+                <img src="assets/enquetes.jpg" alt="Journal fait divers">
+
+                <p>"Depuis toute petite, je me rappelle que les journaux de détective circulaient dans la famille, que
+                    tout le monde lisait. C’est donc un vrai héritage ! J’adore les faits divers : ça me captive, me
+                    tient éveillée, m’apprend à être attentive à ce qui m’entoure, et à essayer de comprendre la
+                    psychologie derrière certains actes."</p>
+            </div>
+        </div>
+
+        <!-- Menu en bas tablette -->
+        <!--Aria label pour améliorer l'accessibilité de mon portfolio pour les utilisateurs de lecteurs d'écran en décrivant les fonctions -->
+        <div class="menu">
+            <!-- Bouton Home (argenté, va vers applications.html) -->
+            <a href="applications.html" class="menu-button" aria-label="Accueil">
+                <div class="bouton-argente bottom"></div>
+            </a>
+
+            <!-- Bouton Retour -->
+            <a href="javascript:void(0);" class="menu-button" aria-label="Retour" onclick="goBack()">
+                <img src="https://img.icons8.com/ios-filled/50/C0C0C0/u-turn-to-left.png" alt="Retour"
+                    class="icon-retour">
+            </a>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

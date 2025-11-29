@@ -4,41 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion - Mon Portfolio</title>
+    <title>Mon Portfolio JEAN Nathalie</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Structure du smartphone -->
-    <div class="smartphone">
+    <!-- Structure tablette -->
+    <div class="tablette">
+        <div class="bouton-argente top"></div>
 
-        <!-- Top avec l'heure et les icônes en haut du smartphone -->
-        <div class="topy spaceBetween flex">
-            <p>14:30</p>
-            <div class="separator"></div>
-            <div class="iTel">
-                <i class="fa-solid fa-signal"></i>
-                <i class="fa-solid fa-wifi"></i>
-                <i class="fa-solid fa-battery-three-quarters"></i>
+        <!-- Informations date et heure en haut de la tablette -->
+        <div class="screen-index">
+            <div class="infos">
+                <p class="date">Sunday, March 10</p>
+                <p class="heure">1:47</p>
+            </div>
+
+            <!-- Notifications découvrir le portfolio de Nathalie -->
+            <div class="notifications">
+                <div class="phrase">
+                    <!-- Lien vers applications.html -->
+                    <a href="applications.html">
+                        <img src="assets/notifications.png" alt="photo notifications">
+                    </a>
+                    <p class="site">NATHALIE PORTFOLIO</p>
+                    <p>1m ago</p>
+                </div>
+                <a href="applications.html">Nathalie vous invite à découvrir son portfolio</a>
+            </div>
+
+            <!-- Icônes torche et caméra -->
+            <div class="iconesTorcheCamera">
+                <div class="torche">
+                    <img src="assets/torche.png" alt="photo d'une torche">
+                </div>
+                <div class="camera">
+                    <img src="assets/Camera.png" alt="photo camera">
+                </div>
+            </div>
+
+
+            <!-- Menu en bas du smartphone -->
+            <!--Aria label pour améliorer l'accessibilité de mon portfolio pour les utilisateurs de lecteurs d'écran en décrivant les fonctions -->
+            <div class="menu">
+                <div class="bouton-argente bottom"></div>
+                <a href="javascript:void(0);" class="menu-button" aria-label="Retour" onclick="goBack()">
+                </a>
+
+                <a href="javascript:void(0);" class="menu-button" aria-label="Retour" onclick="goBack()">
+                    <img src="https://img.icons8.com/ios-filled/50/C0C0C0/u-turn-to-left.png" alt="Retour"
+                        class="icon-retour">
+                </a>
             </div>
         </div>
-
-        <!-- Écran de connexion -->
-        <div class="screen">
-            <div class="login-container">
-                <h2>Bienvenue sur mon Portfolio</h2>
-                <!-- Lien pour rediriger vers index.html -->
-                <a href="applications.html" class="login-btn">Se connecter</a>
-
-            </div>
-        </div>
-
-
-
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/***************************************PROPRIETES GENERALES******************************/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #f0f0f0; */
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*Côte à côte + Si ça rendre pas tout, retour à la ligne*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.marginTop {
+    margin-top: 2.5rem;
+    /* 40px */
+}
+
+.marginBottom {
+    margin-bottom: 1.8rem;
+    /* 30px */
+}
+
+.gap {
+    gap: 3.4rem;
+    /* 55px */
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.width45 {
+    width: 45%;
+}
+
+.width55 {
+    width: 55%;
+}
+
+.container {
+    max-width: 62.5rem;
+    /* 1000px */
+    /*Ds container tjs mettre ls propriétés max width et with*/
+    width: 100%;
+    margin: auto;
+    /*c'est égal à margin-right et margin-left=auto*/
+    display: flex;
+}
+
+
+
+/******************************STRUCTURE DU FORMAT TABLETTE*******************************/
+.tablette {
+    width: 80vw;
+    max-width: 48rem;
+    /* 768px */
+    height: calc(150vh - 5rem);
+    /* 80px */
+    border-top: 4.4rem solid black;
+    /* 70px */
+    border-bottom: 4.4rem solid black;
+    border-left: 2.2rem solid black;
+    /* 35px */
+    border-right: 2.2rem solid black;
+    outline: 0.25rem solid #d9d9d9;
+    /* 4px */
+    outline-offset: -0.25rem;
+    border-radius: 4.4rem;
+    /* 70px */
+    position: relative;
+    margin-top: 25.6rem;
+    /* 410px */
+    box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.6);
+    /* 10px,40px */
+    background: linear-gradient(to bottom, #fe8866, #ffb26d, white, #fe9c69);
+}
+
+
+.bouton-argente {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12.5rem;
+    /* 200px */
+    height: 0.75rem;
+    /* 12px */
+    border-radius: 1.25rem;
+    /* 20px */
+    background: linear-gradient(90deg, #d9d9d9, #ffffff, #b3b3b3, #f2f2f2, #a6a6a6);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3), inset 0 0.0625rem 0.125rem rgba(255, 255, 255, 0.7);
+}
+
+/* Position haut */
+.bouton-argente.top {
+    margin-top: -2.5rem;
+    /* 40px */
+}
+
+
+/*************************HAUT DE L ECRAN AVEC LES ICONES****************************/
+.topy {
+    height: 2.5rem;
+    /* 40px */
+    padding: 0 1.2rem;
+    /* 0 20px */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 0.8rem;
+    /* 14px */
+    gap: 0.6rem;
+    /* 10px */
+}
+
+.topy p {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+    /* supprime marge par défaut */
+}
+
+.iTel {
+    display: flex;
+    gap: 0.62rem;
+    /* 10px */
+}
+
+.iTel i {
+    font-size: 1.2rem;
+    /* 20px */
+}
+
+
+
+/**********************************PARTIE PROFIL************************************/
+.screen-propos {
+    width: 50rem;
+    height: calc(150vh - 5rem);
+    max-height: 120vh;
+    margin-left: 1.8rem;
+    margin-top: 8rem;
+}
+
+/* Personnalisation de la barre de défilement */
+.screen-propos::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.screen-propos::-webkit-scrollbar-thumb {
+    background-color: #ffd0b8;
+    border-radius: 1rem;
+}
+
+.screen-propos::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    /* Couleur de fond de la barre de défilement */
+    border-radius: 1rem;
+}
+
+/***************************************PARTIE A PROPOS***********************/
+.apropos {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #fe8866;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #fe8866, #ffb26d, #fe9c69, #ffffff);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 30px;
+}
+
+.apropos h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #373636;
+}
+
+.apropos p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    font-weight: 500;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #333;
+}
+
+.important {
+    font-weight: bold;
+    /* mots en gras */
+}
+
+.grand {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/***************************************MENU EN BAS TABLETTE***********************/
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.9rem 0;
+    /* 15px */
+    z-index: 20;
+}
+
+.menu-button .icon-retour {
+    width: 1.5rem;
+    /* 25px */
+    height: 1.5rem;
+    position: relative;
+    bottom: -4.5rem;
+    /* 72px */
+    filter: drop-shadow(0 0 0.125rem #aaa);
+}
+
+.bouton-argente.bottom {
+    bottom: -3.12rem;
+    /* 50px */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6.8rem;
+    /* 110px */
+    height: 1.8rem;
+    /* 30px */
+    border-radius: 1.25rem;
+    /* 20px */
+    background: linear-gradient(90deg, #0b0b0b, #0d0d0d);
+    box-shadow: 0.19rem 0.19rem rgba(0, 0, 0, 0.3), inset 0.06rem 0.06rem 0.13rem 0.19rem rgba(255, 255, 255, 0.7);
+}
+
+
+
+/***************************************MEDIA QUERIES******************************/
+/* Pour tablette 800px */
+@media (max-width: 800px) {
+
+    /* Structure tablette*/
+    .tablette {
+        width: 90%;
+        /* au lieu de 55vw trop rigide */
+        max-width: 48rem;
+        height: auto;
+        border: 0.35rem solid black;
+        border-radius: 2rem;
+        margin: 5rem auto;
+        position: relative;
+    }
+
+    /* Position haut */
+    .bouton-argente.top {
+        margin-top: -1.5rem;
+    }
+
+    .bouton-argente {
+        width: 6rem;
+        height: 0.5rem;
+    }
+
+    .menu-button .icon-retour {
+        width: 1.6rem;
+        height: 1.3rem;
+        bottom: -3rem;
+    }
+
+    .bouton-argente.bottom {
+        bottom: -1.9rem;
+        width: 3.2rem;
+        height: 1.2rem;
+    }
+
+
+
+    /*******PARTIE CONTENU PROFIL*******/
+    .screen-propos {
+        width: 40rem;
+        overflow-y: auto;
+        height: calc(150vh - 5rem);
+        max-height: 80vh;
+        margin-left: 2rem;
+        margin-top: 8rem;
+    }
+}
+
+
+/* POUR MOBILE 500px ET MOINS */
+@media (max-width: 500px) {
+    .tablette {
+        width: 90%;
+        max-width: 22rem;
+        /* tablette plus petite */
+        height: calc(100vh - 4rem);
+        border-top: 2rem solid black;
+        border-bottom: 2rem solid black;
+        border-left: 1rem solid black;
+        border-right: 1rem solid black;
+        border-radius: 2rem;
+        margin-top: 5rem;
+    }
+
+    .bouton-argente.top {
+        margin-top: -1rem;
+    }
+
+    .bouton-argente.bottom {
+        bottom: -1.5rem;
+        width: 3.5rem;
+        height: 1rem;
+    }
+
+    .menu-button .icon-retour {
+        bottom: -2.7rem;
+        width: 1.3rem;
+        height: 1.1rem;
+    }
+
+
+    /*******PARTIE CONTENU PROFIL*******/
+    .screen-propos {
+        width: 20rem;
+        max-height: 60vh;
+        margin-top: 1rem;
+    }
+
+    .apropos {
+        box-shadow: #373636 0px 4px 8px, rgba(0, 0, 0, 0.2) 0px 6px 20px;
+    }
+
+    .apropos h2 {
+        font-size: 1.4em;
+        margin-bottom: 5px;
+        color: #373636;
+    }
+
+    .apropos p {
+        font-size: 0.9em;
+        line-height: 1.em;
+    }
+
+
+}

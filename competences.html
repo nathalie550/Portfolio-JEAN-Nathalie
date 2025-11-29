@@ -4,37 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competences - Mon Portfolio Smartphone JEAN Nathalie</title>
-    <link rel="stylesheet" href="css/competences-style.css">
+    <title>Competences - Mon Portfolio JEAN Nathalie</title>
+    <link rel="stylesheet" href="css/competences.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <!-- Le contenu du smartphone -->
-    <div class="smartphone">
+    <!-- Le contenu de la tablette -->
+    <div class="tablette">
 
-        <!-- Top avec l'heure et les icônes en haut du smartphone -->
-        <div class="topy spaceBetween flex">
-            <p>14:30</p>
-            <!-- Div qui représente la barre noire entre l'heure et les icônes -->
-            <div class="separator"></div>
+        <div class="bouton-argente top"></div>
+
+        <!-- Top avec l'heure et les icônes de la tablette  -->
+        <div class="topy">
             <div class="iTel">
                 <i class="fa-solid fa-signal"></i>
                 <i class="fa-solid fa-wifi"></i>
                 <i class="fa-solid fa-battery-three-quarters"></i>
             </div>
+            <p>14:30</p>
         </div>
-
 
         <!-- CONTENU DE LA PAGE COMPETENCES -->
         <div class="screen-competences flex">
 
             <div class="Competences">
-                <h2>Mes Compétences</h2>
+                <header class="app-header">
+                    <h2>💡 Compétences</h2>
+                </header>
 
                 <!-- Cube container -->
                 <div id="cube-container" class="hidden">
-                    <div id="cube" class="cube">
+                    <div class="cube">
                         <div class="face front">
                             <img src="assets/html.png" alt="HTML">
                         </div>
@@ -54,40 +55,37 @@
 
             <!-- SECTION LOGICIELS ET AUTRE -->
 
-            <div class="divers container flex">
-                <div class="logiciels flex">
-
-                    <div class="separation">
-                        <h3>Logiciels collaboratifs</h3>
-                        <p>Notion / Trello / Mural </p>
-                    </div>
-
-                    <div class="separation">
-                        <h3>Outils</h3>
-                        <p>Figma / Wireframe </p>
-                    </div>
-
-                    <div class="separation">
-                        <h3>Autres</h3>
-                        <p>Github / VS code / Wordpress / Maamp </p>
-                    </div>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>🛠️ Outils et Outils collaboratifs</h3>
+                    <p>Figma, VS Code, GitHub, WordPress, Notion, Trello, Mural</p>
                 </div>
 
+                <div class="skill-card">
+                    <h3>📐 Méthodologies</h3>
+                    <p>Design Thinking, Design centré utilisateur</p>
+                </div>
 
+                <div class="skill-card">
+                    <h3>💻 Langages</h3>
+                    <p>HTML, CSS, PHP, JS</p>
+                </div>
             </div>
 
 
 
-            <!-- Menu en bas du smartphone -->
+            <!-- Menu en bas de la tablette -->
+            <!--Aria label pour améliorer l'accessibilité de mon portfolio pour les utilisateurs de lecteurs d'écran en décrivant les fonctions -->
             <div class="menu">
+                <!-- Bouton Home (argenté, va vers applications.html) -->
+                <a href="applications.html" class="menu-button" aria-label="Accueil">
+                    <div class="bouton-argente bottom"></div>
+                </a>
+
+                <!-- Bouton Retour -->
                 <a href="javascript:void(0);" class="menu-button" aria-label="Retour" onclick="goBack()">
-                    <i class="fas fa-arrow-left"></i>
-                </a>
-                <a href="applications.html" class="menu-button" aria-label="Retour à l'accueil">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="profil.html" class="menu-button" aria-label="Mon profil">
-                    <i class="fas fa-user"></i>
+                    <img src="https://img.icons8.com/ios-filled/50/C0C0C0/u-turn-to-left.png" alt="Retour"
+                        class="icon-retour">
                 </a>
             </div>
         </div>

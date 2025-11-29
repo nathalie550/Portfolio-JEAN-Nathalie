@@ -22,7 +22,7 @@
 
    5. vh (viewport height) : pourcentage de la hauteur de la fenêtre
       - 1vh = 1% de la hauteur de la fenêtre
-      - Utile pour gérer la hauteur d'éléments 
+      - Utile pour gérer la hauteur d'éléments
 
    6. % (pourcentages) : relatif à l'élément parent
       - Ex : width: 80% → prend 80% de la largeur de son parent
@@ -124,7 +124,6 @@ li {
     border-radius: 6vw;
     position: relative;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-    background-image: url("/assets/Background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,97 +146,177 @@ li {
 }
 
 
-/*******************************FORMAT DE LA DATE ET HEURE EN HAUT*************************/
-.screen-index {
-    flex: 1;
-    padding-top: 0.6rem;
+/*************************HAUT DE L ECRAN AVEC LES ICONES****************************/
+.topy {
+    height: 2.5rem;
+    padding: 0 1.2rem;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: end;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 0.6rem;
 }
 
-.infos {
-    margin-top: 0.8rem;
-    line-height: 0.01rem;
-}
-
-.date {
-    font-size: 2rem;
-    text-align: center;
-    color: white;
-    font-weight: 500;
-}
-
-.heure {
-    font-size: 6.7rem;
-    text-align: center;
-    height: 5rem;
-    color: white;
+.topy p {
+    font-size: 1.4em;
     font-weight: 600;
+    margin: 0;
+    /* supprime marge par défaut */
+}
+
+.iTel {
+    display: flex;
+    gap: 0.62rem;
+}
+
+.iTel i {
+    font-size: 1.2rem;
 }
 
 
-/***********************NOTIFICATIONS DECOUVRIR PORTFOLIO DE NATHALIE*********************/
-.notifications {
-    width: 43.75rem;
-    height: 8.4rem;
-    background-color: #ffffff80;
-    backdrop-filter: blur(5rem);
-    border-radius: 0.6rem;
+/**********************************PARTIE METIERS*******************************/
+.screen-metiers {
+    overflow-y: auto;
+    /* Permet le défilement vertical */
+    height: calc(150vh - 5rem);
+    max-height: 120vh;
+    /* Limite la hauteur à 100% de la fenêtre */
+}
+
+/**********************************PARTIE METIERS************************************/
+
+.screen-metiers {
+    width: 50rem;
+    overflow-y: auto;
+    height: calc(150vh - 5rem);
+    max-height: 120vh;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.screen-metiers::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.screen-metiers::-webkit-scrollbar-thumb {
+    background-color: #ffd0b8;
+    border-radius: 1rem;
+}
+
+.screen-metiers::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+}
+
+
+/*********************************PAGE PARCOURS**************************************/
+.screen-metiers h2 {
+    font-size: 2.5em;
+    margin-left: 15.625rem;
+    text-shadow: #333 0.0625rem 0.0625rem 0.125rem;
+}
+
+/* Titre "mes professions" */
+.one p {
+    font-size: 1.8em;
+    margin-left: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/***CONTAINER DES METIERS***/
+.metiers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.3rem;
+    /* espace horizontal réduit */
+    row-gap: 1.9rem;
+    /* espace vertical augmenté */
     padding: 0.5rem;
-    margin-left: 1.5rem;
+    /* padding allégé */
+    margin-bottom: 3rem;
 }
 
-.notifications p {
-    font-size: 1.125rem;
-    font-weight: 500;
-}
-
-.phrase {
-    display: flex;
-    width: 100%;
-    color: #110b0b9e;
-    margin-top: 0.6rem;
-}
-
-.phrase img {
-    width: 2.8rem;
-    height: 2.8rem;
-}
-
-.site {
+/* Card métier */
+.metier-card {
     width: 80%;
-    margin-left: 0.6rem;
-    color: #110b0b9e;
+    background: linear-gradient(to bottom,
+            #fadb62, #e6ba5e, #f4d162, #edc560);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 0.125rem solid #e4b65e;
 }
 
-.notifications a {
-    font-weight: 800;
-    font-size: 1.3rem;
-    margin-left: 0.9rem;
-    color: #0c0303bb;
+.metier-card a {
     text-decoration: none;
+    color: inherit;
+}
+
+.metier-icon {
+    font-size: 2.9rem;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.metier-card p {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/*** CADRE DÉTAIL MÉTIER (POPUP) ***/
+.detail-popup {
+    display: none;
+    bottom: 0;
+    right: 0;
+    width: 270px;
+    border: 3px solid #f1f1f1;
+    background: white;
+    z-index: 9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Contenu du cadre */
+.detail-content {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/*** BOUTON OUVERTURE ***/
+.open-button {
+    background-color: #ffffff;
+    /* fond blanc */
+    color: #555555;
+    /* texte gris foncé */
+    border: 2px solid #f4c542;
+    /* rappel couleur cartes */
+    box-shadow: 0 0.35rem 0.8rem rgba(0, 0, 0, 0.15);
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 45%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s ease;
 }
 
 
-/*******************************ICONE CAMERA ET TORCHE*************************/
-.iconesTorcheCamera {
-    display: flex;
-    margin-top: 21.8rem;
-    width: 43.7rem;
-    height: 7.5rem;
-    gap: 26.2rem;
-    margin-left: 5rem;
-}
-
-.torche img,
-.camera img {
-    width: 5rem;
-    height: 5rem;
-    object-fit: cover;
-    display: block;
-    margin-top: 1.2rem;
-    opacity: 60%;
+/*********** BOUTON FERMER *************/
+.close-btn {
+    background-color: #555;
+    font-size: 1.1rem;
+    color: #edc560;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 8px;
 }
 
 
@@ -273,6 +352,8 @@ li {
     background: linear-gradient(90deg, #0b0b0b, #0d0d0d);
     box-shadow: 0.19rem 0.19rem rgba(0, 0, 0, 0.3), inset 0.06rem 0.06rem 0.13rem 0.19rem rgba(255, 255, 255, 0.7);
 }
+
+
 
 
 /*******************************MEDIA QUERIES***********************************/
@@ -316,41 +397,15 @@ li {
         font-size: 3rem;
     }
 
-    .notifications {
+    .metier-card {
         width: 90%;
-        padding: 0.5rem;
-        margin: 0.5rem auto;
-        gap: 0.5rem;
+        padding: 0.8rem;
+
     }
 
-    .notifications p {
-        font-size: 1rem;
-    }
-
-    .phrase img {
-        width: 1.6rem;
-    }
-
-    .site {
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    /* Icônes torche et caméra */
-    .iconesTorcheCamera {
-        margin: 3rem auto;
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-    }
-
-    .torche img,
-    .camera img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
 }
+
+
 
 /******************************POUR FORMAT MOBILE**********************************/
 @media (max-width: 500px) {
@@ -391,60 +446,37 @@ li {
         font-size: 2.6rem;
     }
 
-    .notifications {
-        width: 90%;
-        margin: 0.5rem auto;
-        padding: 0.4rem;
-        display: flex;
-        flex-direction: column;
+    .screen-metiers {
+        width: 100%;
+        overflow-y: auto;
+        max-height: calc(100vh - 6rem);
+        padding: 0.5rem;
+        box-sizing: border-box;
+        margin-bottom: 130px;
     }
 
-    .phrase {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 0.8rem;
+    .screen-metiers h2 {
+        font-size: 1.5em;
+        margin-left: 2rem;
+    }
+
+    /* Titre "mes professions" */
+    .one p {
+        font-size: 1.1em;
+        margin-left: 0.25rem;
         width: 100%;
     }
 
-    .notifications p {
-        font-size: 0.6rem;
-        margin: 0;
+    .metiers-container {
+        grid-template-columns: 1fr;
+        /* une colonne */
+        row-gap: 1.1rem;
+        column-gap: 0;
+        width: 100%;
     }
 
-    .phrase img {
-        width: 1.1rem;
-        height: 1.1rem;
-    }
-
-    .site {
-        font-size: 0.65rem;
-        flex: 1;
-        /* prend l’espace restant */
-        margin-right: 0.4rem;
-        white-space: nowrap;
-        /* reste sur une ligne */
-        overflow: hidden;
-    }
-
-    .notifications a {
-        font-size: 0.65rem;
-        white-space: nowrap;
-        /* "1m ago" reste toujours sur une seule ligne */
-    }
-
-    /* Icônes torche et caméra */
-    .iconesTorcheCamera {
-        margin: 8.5rem auto;
-        width: 90%;
-        display: flex;
-        justify-content: space-around;
-        gap: 4.5rem;
-    }
-
-    .torche img,
-    .camera img {
-        width: 2rem;
-        height: 2rem;
+    .detail-popup {
+        width: 94%;
+        padding: 5px;
     }
 }
